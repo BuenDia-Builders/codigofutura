@@ -217,7 +217,7 @@ https://github.com/stellar/stellar-docs
 - [ ] Haz el tutorial "Hello World" de Soroban
 - [ ] Experimenta con Stellar Laboratory
 
-### Próximo Mes: Construir
+### Próximas 3 semanas: Construir
 
 **📋 Checklist de Proyectos:**
 
@@ -230,7 +230,7 @@ https://github.com/stellar/stellar-docs
 
 ---
 
-## 🔥 Desafíos para Tiburonas Avanzadas
+## 🔥 Desafíos para Tiburonas Avanzadas - No es obligatorio
 
 ### Desafío #1: Mini Proyecto de Pago
 
@@ -480,9 +480,9 @@ Pero tú demostraste algo importante: que puedes aprender, que puedes hacer, que
 
 Empezaste aquí. En la Clase 0 de Buen Día Builders. Como una Tiburona que no tenía miedo de zambullirse en aguas desconocidas.
 
-**Estamos aquí para ti.** En Discord. En GitHub. En la comunidad. No estás sola en este viaje.
+**Estamos aquí para ti.** En Telegram. En GitHub. En la comunidad. No estás sola en este viaje.
 
-**Sigue nadando, Tiburona. El océano es tuyo.** 🦈⚡
+**Sigue nadando. El océano es tuyo.** 🦈⚡
 
 Con orgullo y admiración,
 
@@ -588,17 +588,23 @@ Tus mentoras en Buen Día Builders
 Un libro digital descentralizado donde miles de computadoras mantienen copia de todas las transacciones. Nadie puede alterarlo sin que todos lo noten.
 </details>
 
+---
+
 **2. ¿Cuál es la diferencia entre tu clave pública y privada?**
 <details>
 <summary>Ver respuesta</summary>
 Clave pública = tu dirección (compartible). Clave privada = tu contraseña maestra (NUNCA compartir).
 </details>
 
+---
+
 **3. ¿Por qué Stellar es diferente de Bitcoin?**
 <details>
 <summary>Ver respuesta</summary>
 Bitcoin es lento (10+ min), caro ($5-50), solo BTC. Stellar es rápido (3-5 seg), baratísimo ($0.00001), soporta cualquier activo.
 </details>
+
+---
 
 ### Bloque 2: Práctica
 
@@ -608,17 +614,23 @@ Bitcoin es lento (10+ min), caro ($5-50), solo BTC. Stellar es rápido (3-5 seg)
 Usando Friendbot en laboratory.stellar.org - pegar tu dirección y click en "Get test network lumens".
 </details>
 
+---
+
 **5. ¿Qué significa "finalidad" en blockchain?**
 <details>
 <summary>Ver respuesta</summary>
 El momento cuando tu transacción es 100% irreversible. En Stellar: 3-5 segundos.
 </details>
 
+---
+
 **6. ¿Dónde puedes ver los detalles de tu transacción?**
 <details>
 <summary>Ver respuesta</summary>
 En StellarExpert (stellar.expert/explorer/testnet) - buscar tu dirección.
 </details>
+
+---
 
 ### Bloque 3: Conceptos Técnicos
 
@@ -628,17 +640,23 @@ En StellarExpert (stellar.expert/explorer/testnet) - buscar tu dirección.
 Una "huella digital" única para cualquier dato. Un pequeño cambio crea un hash completamente diferente. Esto hace blockchain inmutable.
 </details>
 
+---
+
 **8. ¿Cómo funciona la descentralización en Stellar?**
 <details>
 <summary>Ver respuesta</summary>
 88 validadores independientes verifican transacciones usando SCP. Ninguno tiene control total. Colaboran en lugar de competir.
 </details>
 
+---
+
 **9. ¿Por qué los fees de Stellar son tan bajos?**
 <details>
 <summary>Ver respuesta</summary>
 No hay minería competitiva, usa consenso eficiente (SCP), diseñado específicamente para pagos. Fee es anti-spam, no fuente de ingreso.
 </details>
+
+---
 
 ### Bloque 4: Comparaciones
 
@@ -648,17 +666,23 @@ No hay minería competitiva, usa consenso eficiente (SCP), diseñado específica
 Stellar: pagos, remesas, aplicaciones financieras simples, fees predecibles. Ethereum: DeFi complejo, NFTs, máxima flexibilidad.
 </details>
 
+---
+
 **11. ¿Qué es un Layer 2 y por qué Stellar no necesita uno?**
 <details>
 <summary>Ver respuesta</summary>
 L2 es una solución construida sobre una blockchain para escalar. Stellar no necesita porque fue diseñado eficiente desde el inicio (SCP, procesamiento paralelo).
 </details>
 
+---
+
 **12. ¿Qué problema resuelven los smart contracts?**
 <details>
 <summary>Ver respuesta</summary>
 Ejecutan acuerdos automáticamente sin intermediarios. Nadie puede manipularlos, son transparentes, y se ejecutan exactamente como están programados.
 </details>
+
+---
 
 ### Tu Puntuación
 
@@ -706,35 +730,9 @@ Ejecutan acuerdos automáticamente sin intermediarios. Nadie puede manipularlos,
 - Código de ejemplos
 - Discusiones con compañeras
 
-**Discord de Buen Día Builders:**
+**Telegram de Buen Día Builders:**
 - Sesiones de Q&A
-- Office hours
-- Pair programming
 
-**Newsletter Semanal:**
-- Tips técnicos
-- Recursos nuevos
-- Oportunidades de la comunidad
-
-**Eventos en Vivo:**
-- Workshops mensuales
-- Hackathons
-- Demo days
-
----
-
-## 🌟 Palabras de Tiburonas Anteriores
-
-> *"Nunca pensé que programar blockchain sería para mí. Ahora tengo un contrato en producción y he ganado mi primer grant. Gracias Buen Día Builders por creer en mí cuando yo no creía."*  
-> — **Ana, Tiburona Builder - Clase 1**
-
-> *"Lo mejor del curso no es solo el contenido técnico (que es excelente), sino la comunidad. Las Tiburonas son increíbles y siempre están dispuestas a ayudar."*  
-> — **Lucía, Tiburona Builder - Clase 2**
-
-> *"Entré sin saber nada de blockchain. Salí con una dApp funcionando y una oferta de trabajo. Este curso cambió mi carrera."*  
-> — **María, Tiburona Builder - Clase 3**
-
-**Tú serás la próxima en compartir tu historia de éxito.** 🦈
 
 ---
 
@@ -758,7 +756,7 @@ Ejecutan acuerdos automáticamente sin intermediarios. Nadie puede manipularlos,
 ═══════════════════════════════════════
 
         Clase 0: Fundamentos
-           [Tu Nombre]
+           [Tu Nombre de Tiburona Builder]
 
 Ha demostrado dominio de:
 • Fundamentos de Blockchain
@@ -780,7 +778,7 @@ Ha demostrado dominio de:
 **Antes de cerrar, lee este compromiso en voz alta:**
 
 ```
-Yo, [tu nombre], me comprometo como Tiburona Builder a:
+Yo, Builder, me comprometo como Tiburona Builder a:
 
 🎯 SER PRECISA
    Escribir código con propósito e intención
@@ -803,7 +801,7 @@ Yo, [tu nombre], me comprometo como Tiburona Builder a:
 Como las tiburonas reales: siempre en movimiento,
 siempre avanzando, siempre creciendo.
 
-🦈⚡ ¡Vamos a construir, Tiburona! ⚡🦈
+🦈⚡ ¡Vamos a construir! ⚡🦈
 ```
 
 ---
@@ -937,7 +935,7 @@ Pero ya demostraste que puedes nadar en estas aguas.
 
 ---
 
-**🦈⚡ ¡VAMOS A CONSTRUIR, TIBURONAS! ⚡🦈**
+**🦈⚡ ¡VAMOS A CONSTRUIR! ⚡🦈**
 
 ---
 
