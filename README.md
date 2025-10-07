@@ -101,8 +101,8 @@ stellar-course/
 
 ### 1️⃣ Clona el Repositorio
 ```bash
-git clone https://github.com/buendia-builders/stellar-course.git
-cd stellar-course
+git clone https://github.com/buendia-builders/codigofutura.git
+cd codigofutura
 ```
 
 ### 2️⃣ Empieza por la Clase 0
@@ -181,7 +181,7 @@ Al completar:
 ## ❓ FAQ
 
 **¿Necesito experiencia previa?**
-No es necesario. Muchas Tiburonas empezaron desde cero.
+No es necesario. Muchas Tiburonas empezaron desde cero, si recomendamos una base de web2, lógica y GitHub
 
 **¿Cuánto tiempo toma?**
 7 semanas + 1 pregrabada. ~60-80 horas totales.
@@ -192,7 +192,6 @@ Sí, 100% gratuito gracias a SDF y BAF.
 **¿Qué hago si me atasco?**
 1. Revisa troubleshooting, 
 2. Pregunta en Telegram, 
-3. Office hours
 
 **Ver [FAQ Completo](./FAQ.md)**
 
