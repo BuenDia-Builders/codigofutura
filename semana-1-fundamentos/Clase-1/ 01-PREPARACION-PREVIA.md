@@ -15,7 +15,7 @@ Asegúrate de poder acceder a estas páginas:
 
 - [ ] [Stellar Laboratory](https://laboratory.stellar.org)
 - [ ] [StellarExpert Testnet](https://stellar.expert/explorer/testnet)
-- [ ] [Friendbot](https://friendbot.stellar.org)
+- [ ] [Friendbot](https://lab.stellar.org/account/fund?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;;)
 
 **¿No logras acceder?** Avisa al equipo de Buen Día Builders antes de la clase.
 
