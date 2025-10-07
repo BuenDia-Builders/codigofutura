@@ -207,7 +207,7 @@ PARTE 3: REFLEXIÓN COMUNITARIA
 
 ## 📤 ENVÍO
 
-**Enviar a**: [Chamverse](https://app.charmverse.io/buendiabuilders/proposals). Si necesitas ayuda en la sección 07-CHAMVERSE explicamos cada paso para usar Chamverse.
+**Enviar a**: Chamverse. Si necesitas ayuda en la sección 07-CHAMVERSE explicamos cada paso para usar Chamverse, la invitación es privada.
 
 **Formato**: PDF o Markdown (.md)
 
