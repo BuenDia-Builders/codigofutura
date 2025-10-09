@@ -2,7 +2,7 @@
 
 ## 📅 Información General
 
-**Fecha de entrega**: Antes de la próxima clase  
+**Fecha de entrega**: Hay tiempo hasta el sábado 11/10/2025, antes de la clase de refuerzo debe estar entregada  
 **Tiempo estimado**: 2-3 horas  
 **Objetivo**: Consolidar habilidades y conectar con aplicaciones reales
 
