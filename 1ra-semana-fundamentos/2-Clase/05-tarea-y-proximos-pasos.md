@@ -687,26 +687,24 @@ Problema: Falsificación de diplomas
 
 ### Checklist completo
 
-**JavaScript (50 puntos):**
-- [ ] multi-transaccion.js funciona (20 pts)
-- [ ] Screenshots de transacción (5 pts)
-- [ ] monitor-pagos.js funciona (20 pts)
-- [ ] Demo de monitoreo (5 pts)
-- [ ] BONUS: Funcionalidades extra (5 pts)
+**JavaScript (se suman puntos):**
+- [ ] multi-transaccion.js funciona 
+- [ ] Screenshots de transacción 
+- [ ] monitor-pagos.js funciona 
+- [ ] Demo de monitoreo 
+- [ ] BONUS: Funcionalidades extra 
 
-**CLI (30 puntos):**
-- [ ] deploy.sh funciona (15 pts)
-- [ ] deployed-contract-id.txt generado (2 pts)
-- [ ] Screenshot de ejecución (3 pts)
-- [ ] mi-cheatsheet-cli.md completo (10 pts)
+**CLI (se suman puntos):**
+- [ ] deploy.sh funciona 
+- [ ] deployed-contract-id.txt generado 
+- [ ] Screenshot de ejecución 
+- [ ] mi-cheatsheet-cli.md completo 
 
-**Essay (20 puntos):**
-- [ ] 2 proyectos investigados (6 pts)
-- [ ] Propuesta original (8 pts)
-- [ ] Calidad de escritura (4 pts)
-- [ ] Referencias (2 pts)
-
-**TOTAL: 100 puntos**
+**Essay (se suman puntos):**
+- [ ] 2 proyectos investigados 
+- [ ] Propuesta original 
+- [ ] Calidad de escritura 
+- [ ] Referencias 
 
 ---
 
@@ -1035,9 +1033,9 @@ Cada línea de código suma.
 4. Verifica que el trade se completó
 
 **Si lo logras:**
-- 🏆 +20 puntos bonus
+- 🏆 Puntos bonus
 - 🏆 Reconocimiento especial en clase
-- 🏆 Una sesión 1-on-1 con la profe
+- 🏆 Una sesión 1-on-1 con las profes
 
 **Es difícil. Muy difícil. Pero posible.**
 
