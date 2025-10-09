@@ -164,27 +164,25 @@ TAREA #1: MI VIAJE EN STELLAR
 
 Nombre: [Tu nombre completo]
 Email: [Tu email]
-Fecha: [Fecha de entrega]
 
 ═══════════════════════════════════════════════════
 PARTE 1: PRÁCTICA TÉCNICA
 ═══════════════════════════════════════════════════
 
-TRANSACCIÓN A: CREAR SEGUNDA CUENTA
+TRANSACCIÓN A: Una compañera del equipo de 4
 ──────────────────────────────────────────────────
 Cuenta Original: GBXXX...
 Segunda Cuenta: GBYYY...
 Transaction Hash: abc123...
 
-[Screenshot 1]
+[Si desea podes adjuntar la imagen en Imagen 1]
 
 TRANSACCIÓN B: MEMO PERSONALIZADO
 ──────────────────────────────────────────────────
 Transaction Hash: def456...
 Memo: "[tu memo]"
 
-[Screenshot 2]
-[Screenshot 3]
+[Screenshot 2][Screenshot 3]
 
 ═══════════════════════════════════════════════════
 PARTE 2: INVESTIGACIÓN CREATIVA
@@ -218,7 +216,7 @@ PARTE 3: REFLEXIÓN COMUNITARIA
 ## ✅ CHECKLIST ANTES DE ENTREGAR
 
 - [ ] Completé ambas transacciones prácticas
-- [ ] Incluí los 3 screenshots requeridos
+- [ ] Incluir si es necesario los screenshots requeridos
 - [ ] Mi relato tiene 150-250 palabras
 - [ ] Mi reflexión tiene 100-150 palabras
 - [ ] Revisé ortografía y gramática
