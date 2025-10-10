@@ -5,10 +5,9 @@
 
 ## 🎯 INFORMACIÓN GENERAL DE LA TAREA
 
-**Fecha de entrega:** Domingo a las 23:59 horas  
-**Modalidad:** Lo pueden hacer grupal con sus equipos  
-**Tiempo estimado:** 3-3.5 horas  
-**Dificultad:** Media - Refuerzo de conceptos prácticos
+**Entrega:** Antes del domingo 12/10 por medio de Chamverse dejar el link de GitHub, la tarea puede ser realizada entre los equipos pero recuerden que cada entrega es individual en Chamver.
+**Tiempo estimado:** 4-5 horas  
+**Objetivo:** Consolidar todo lo que aprendiste
 
 ---
 
