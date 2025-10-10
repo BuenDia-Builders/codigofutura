@@ -5,8 +5,10 @@
 
 ## 🎯 INFORMACIÓN GENERAL DE LA TAREA
 
-**Entrega:** Antes del domingo 12/10 por medio de Chamverse dejar el link de GitHub, la tarea puede ser realizada entre los equipos pero recuerden que cada entrega es individual en Chamver.
+**Entrega:** Antes del domingo 12/10 a la medianoche por medio de Chamverse dejar el link de GitHub, la tarea puede ser realizada entre los equipos pero recuerden que cada entrega es individual en Chamverse.
+
 **Tiempo estimado:** 4-5 horas  
+
 **Objetivo:** Consolidar todo lo que aprendiste
 
 ---
