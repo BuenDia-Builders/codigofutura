@@ -84,7 +84,7 @@ Eso es ser una Tiburona Builder: no solo escribir código que funciona, sino có
 Si te trabas en algo:
 
 1. **Lee el mensaje de error** - Rust da errores MUY descriptivos
-2. **Asiste a las consultas** - Hay horarios especiales para preguntas
+2. **Asiste a las clases de consultas** - Hay horarios especiales para preguntas
 
 **Recuerda:** Todas las Tiburonas empezamos en el mismo lugar. Preguntar no es debilidad, es inteligencia. 💪
 
