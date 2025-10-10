@@ -164,6 +164,8 @@ TAREA #1: MI VIAJE EN STELLAR
 
 Nombre: [Tu nombre completo]
 Email: [Tu email]
+UserName de Telegram: [Como te encontramos en Telegram] Ejemplo Tati @baddestalien
+Tu wallet Freighter: (TU CUENTA que puede recibir XLM)
 
 ═══════════════════════════════════════════════════
 PARTE 1: PRÁCTICA TÉCNICA
