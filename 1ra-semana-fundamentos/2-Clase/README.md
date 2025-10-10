@@ -87,6 +87,62 @@ Puedes descargar todo el material en formato ZIP:
 
 ---
 
+## 🎯 PRÓXIMA CLASE: RUST DESDE CERO
+
+**Martes 14/10/2025 - Corroborar hs en nuestra planilla**
+
+### Lo que aprenderás
+
+**Clase 3 será diferente:**
+- 🦀 Sintaxis básica de Rust
+- 📦 Variables, tipos, funciones
+- 🔄 Control de flujo
+- 🎯 Ownership (el superpoder de Rust)
+- 📝 Escribir hello world en Rust
+
+---
+
+### ¿Por qué Rust?
+
+**Porque es el lenguaje de Soroban.**
+
+Rust elimina bugs que otros lenguajes permiten:
+- No hay null pointer exceptions
+- No hay memory leaks
+- No hay race conditions
+- Si compila, probablemente funciona
+
+**¿Es difícil?** Sí, un poco. Rust es diferente a otros lenguajes.
+
+**¿Vale la pena?** ABSOLUTAMENTE.
+- Rust developers están entre los mejor pagados
+- Es el futuro de sistemas seguros
+- Es lo que necesitas para escribir contratos
+
+---
+
+### Preparación para Clase 3
+
+**Instalar antes de la clase:**
+
+1. **Rust (con rustup):**
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+2. **Verificar instalación:**
+```bash
+rustc --version
+cargo --version
+```
+
+**Deberías ver:**
+```
+rustc 1.75.0 (o superior)
+cargo 1.75.0 (o superior)
+```
+
+
 ## 🦈 RECORDATORIO
 
 > "Las Tiburonas no solo leen código.  
@@ -97,5 +153,5 @@ Puedes descargar todo el material en formato ZIP:
 
 ---
 
-*Última actualización: 09/10/2025*  
+*Última actualización: 10/10/2025*  
 *Creado con ❤️ para las Tiburonas Builders*
