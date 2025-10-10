@@ -6,7 +6,7 @@
 
 ## 🎯 TAREA #2: MI PRIMERA DAPP
 
-**Entrega:** Antes del martes 14/10 por medio de Chamverse dejar el link de GitHub, la tarea puede ser entregada en los grupos de 4 o de 6.  
+**Entrega:** Antes del domingo 12/10 por medio de Chamverse dejar el link de GitHub, la tarea puede ser realizada entre los equipos pero recuerden que cada entrega es individual en Chamver.
 **Tiempo estimado:** 4-5 horas  
 **Objetivo:** Consolidar todo lo que aprendiste
 
