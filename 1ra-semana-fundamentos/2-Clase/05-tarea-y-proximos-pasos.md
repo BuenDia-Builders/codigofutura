@@ -110,28 +110,6 @@ Cuenta: GBYYY...456
 
 ---
 
-## 💡 TIPS PARA COMPLETAR LA TAREA
-
-### Gestión del tiempo
-
-**Sugerencia de horario:**
-
-- **Día 1 (2 horas):** JavaScript
-  - 1 hora: multi-transaccion.js
-  - 1 hora: monitor-pagos.js
-
-- **Día 2 (1.5 horas):** CLI
-  - 1 hora: deploy.sh
-  - 0.5 horas: cheatsheet
-
-- **Día 3 (1.5 horas):** Essay
-  - 0.5 horas: Investigación
-  - 1 hora: Escritura
-
-**Total: 5 horas** distribuidas en 3 días.
-
----
-
 ### Cuándo pedir ayuda
 
 **SIEMPRE está bien pedir ayuda si:**
