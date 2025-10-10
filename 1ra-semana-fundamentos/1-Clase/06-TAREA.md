@@ -172,17 +172,10 @@ PARTE 1: PRÁCTICA TÉCNICA
 TRANSACCIÓN A: Una compañera del equipo de 4
 ──────────────────────────────────────────────────
 Cuenta Original: GBXXX...
-Segunda Cuenta: GBYYY...
+Cuenta de la compañera: GBYYY...
 Transaction Hash: abc123...
 
 [Si desea podes adjuntar la imagen en Imagen 1]
-
-TRANSACCIÓN B: MEMO PERSONALIZADO
-──────────────────────────────────────────────────
-Transaction Hash: def456...
-Memo: "[tu memo]"
-
-[Screenshot 2][Screenshot 3]
 
 ═══════════════════════════════════════════════════
 PARTE 2: INVESTIGACIÓN CREATIVA
