@@ -43,16 +43,6 @@ Sigue estos documentos en orden para aprovechar mejor el contenido:
 - Tarea creativa
 - Criterios de evaluación
 
-**📚 07-RECURSOS-COMUNIDAD.md**
-- Documentación oficial
-- Comunidades en español
-- Soporte y ayuda
-
-**🔧 08-TROUBLESHOOTING.md**
-- Problemas comunes
-- Soluciones rápidas
-- Tips de seguridad
-
 ---
 
 ## ⭐ OBJETIVOS DE ESTA CLASE

@@ -200,7 +200,7 @@ PARTE 3: REFLEXIÓN COMUNITARIA
 
 ## 📤 ENVÍO
 
-**Enviar a**: Chamverse. Si necesitas ayuda en la sección 07-CHAMVERSE explicamos cada paso para usar Chamverse, la invitación es privada.
+**Enviar a**: Chamverse. Si necesitas ayuda en la sección de Recursos pordes ver.
 
 **Formato**: PDF o Markdown (.md)
 
