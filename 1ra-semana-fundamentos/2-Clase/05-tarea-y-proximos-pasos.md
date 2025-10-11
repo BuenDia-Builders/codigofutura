@@ -54,7 +54,7 @@ for (let i = 1; i <= 5; i++) {
     // Tu código aquí
 }
 ```
-### Página de referencia: 53 del PDF
+### Página de referencia: 53 del PDF de la clase n2, lo pueden ver en Chamverse las Tiburonas de Código Futura
 
 ---
 
@@ -75,7 +75,7 @@ const destinatarios = [
     { publicKey: "G...3", memo: "Pago-003" }
 ];
 ```
-### Página de referencia: 55-62 del PDF
+### Página de referencia: 55-62 del PDF de la clase n2, lo pueden ver en Chamverse las Tiburonas de Código Futura
 
 ---
 
@@ -106,7 +106,7 @@ Cuenta: GBYYY...456
   Trustlines: 0
   Sequence: 987654321
 ```
-### Página de referencia: 71-72 del PDF
+### Página de referencia: 71-72 del PDF de la clase n2, lo pueden ver en Chamverse las Tiburonas de Código Futura
 
 ---
 
