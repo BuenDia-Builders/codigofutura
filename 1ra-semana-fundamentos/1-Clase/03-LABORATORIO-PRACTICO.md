@@ -37,11 +37,14 @@ Si dice "Mainnet":
 ### PASO 3: Generar Tu Par de Llaves
 
 #### Checklist:
-- [ ] Click en "Account" (menú superior)
+- [ ] Click en "Account"
 - [ ] Click en "Create New Account"
-- [ ] Click en botón azul "Generate keypair"
+- [ ] Click en botón "Generate keypair"
 - [ ] Esperar 1 segundo
 - [ ] Ver tus llaves en pantalla
+
+<img width="1265" height="435" alt="image" src="https://github.com/user-attachments/assets/d19365ce-b81f-4072-a33b-4073a4008ad8" />
+
 
 #### Resultado esperado:
 
