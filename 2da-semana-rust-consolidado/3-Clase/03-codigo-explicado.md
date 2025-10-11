@@ -1037,7 +1037,6 @@ contador = contador.checked_add(1)
 - [Ejemplos de contratos](https://github.com/stellar/soroban-examples)
 
 ### Comunidad
-- [Discord de Stellar](https://discord.gg/stellar)
 - [Stack Exchange - Stellar](https://stellar.stackexchange.com/)
 
 ---

@@ -447,95 +447,165 @@ Crea un contrato de votación con dos opciones:
 **Bonus:** Emití eventos para cada voto.
 
 <details>
-<summary>💡 Ver estructura inicial</summary>
+<summary>💡 Ver pistas</summary>
 
-```rust
-#[contract]
-pub struct VotingContract;
-
-#[contractimpl]
-impl VotingContract {
-    pub fn vote_a(env: Env) {
-        let mut votes: u32 = env.storage()
-            .instance()
-            .get(&symbol_short!("votes_a"))
-            .unwrap_or(0);
-        
-        votes += 1;
-        
-        env.storage().instance().set(
-            &symbol_short!("votes_a"),
-            &votes
-        );
-        
-        env.events().publish(
-            (symbol_short!("vote"),),
-            symbol_short!("A")
-        );
-    }
-    
-    pub fn vote_b(env: Env) {
-        // Similar a vote_a pero para opción B
-    }
-    
-    pub fn get_results(env: Env) -> (u32, u32) {
-        let votes_a = env.storage()
-            .instance()
-            .get(&symbol_short!("votes_a"))
-            .unwrap_or(0);
-        
-        let votes_b = env.storage()
-            .instance()
-            .get(&symbol_short!("votes_b"))
-            .unwrap_or(0);
-        
-        (votes_a, votes_b)
-    }
-    
-    pub fn get_winner(env: Env) -> Symbol {
-        let (a, b) = Self::get_results(env);
-        
-        if a > b {
-            symbol_short!("A")
-        } else if b > a {
-            symbol_short!("B")
-        } else {
-            symbol_short!("tie")
-        }
-    }
-}
-```
+**Pistas:**
+1. Cada opción tiene su propia key en storage
+2. `vote_b()` es casi idéntico a `vote_a()`
+3. `get_results()` lee ambas keys y retorna una tupla
+4. `get_winner()` compara los valores
 
 </details>
 
 ---
 
-## 🧠 Nivel 4: Desafíos conceptuales
+## 📚 Recursos adicionales
 
-### Desafío 4.1: ¿Por qué usar checked_add?
+### Para profundizar en Rust
 
-Explicá con tus propias palabras:
-1. ¿Qué problema resuelve `checked_add`?
-2. ¿Por qué es importante en smart contracts?
-3. ¿Qué alternativas existen y cuáles son sus riesgos?
+**The Rust Book (Oficial)**
+- 📖 URL: https://doc.rust-lang.org/book/
+- Capítulos recomendados:
+  - Cap 3: Common Programming Concepts
+  - Cap 4: Understanding Ownership ⭐
+  - Cap 6: Enums and Pattern Matching
 
-### Desafío 4.2: Symbol vs String
+**Rust by Example**
+- 📖 URL: https://doc.rust-lang.org/rust-by-example/
+- Código ejecutable que podés modificar
 
-Diseñá un token contract y decidí para cada campo si usarías Symbol o String:
-- Nombre del token (ej: "Mi Token Increíble")
-- Símbolo del token (ej: "MTK")
-- Key para almacenar el supply total
-- Descripción del proyecto
-- Eventos de transferencia
-- Mensajes de error personalizados
+**Rustlings - Ejercicios interactivos**
+- 🏋️ URL: https://github.com/rust-lang/rustlings
+- Instalación: `cargo install rustlings`
+- Comando: `rustlings watch`
 
-### Desafío 4.3: Ownership en la práctica
+### Para profundizar en Soroban
 
-Explicá qué pasa en este código y por qué:
+**Soroban Learn (Oficial)**
+- 📖 URL: https://soroban.stellar.org/docs/learn
+- Ejemplos de contratos completos
 
-```rust
-pub fn transfer_tokens(env: Env, from: Address, to: Address, amount: u128) {
-    let mut from_balance = get_balance(env, from);
+**Soroban Examples Repository**
+- 💻 URL: https://github.com/stellar/soroban-examples
+- Código fuente de tokens, NFTs, AMMs
+
+### Herramientas para practicar
+
+**Rust Playground**
+- 🎮 URL: https://play.rust-lang.org/
+- Probá código sin instalar nada
+
+**Soroban Testnet**
+- 🌐 URL: https://soroban.stellar.org/docs/getting-started/deploy-to-testnet
+- Desplegá contratos reales en testnet
+
+---
+
+## 🗺️ Roadmap de práctica sugerido
+
+### Esta semana (opcional):
+- [ ] Completar ejercicios Nivel 1 (Lectura de código)
+- [ ] Intentar al menos 1 ejercicio del Nivel 2
+- [ ] Leer Rust Book Capítulo 4
+
+### Próxima semana (opcional):
+- [ ] Experimentar con el contador
+- [ ] Hacer ejercicios de Rustlings
+- [ ] Explorar Soroban Examples
+
+### Cuando tengas más tiempo:
+- [ ] Proyecto del Nivel 3
+- [ ] Implementar un token simple
+- [ ] Desplegar en testnet
+
+---
+
+## 🤔 Preguntas frecuentes
+
+### "¿Debo hacer todos estos ejercicios?"
+
+**No.** Son sugerencias para practicar cuando quieras. No hay obligación ni deadline por ahora.
+
+### "¿Cuánto tiempo toma dominar ownership?"
+
+Para entenderlo conceptualmente: 1-2 semanas. Para usarlo naturalmente: 1-2 meses de práctica. Es normal luchar con el compilador al principio.
+
+### "¿Debo memorizar todas las reglas?"
+
+No. Entendé los conceptos fundamentales. El compilador te recordará las reglas cuando las necesites.
+
+### "¿Qué hago si me trabo?"
+
+1. Lee el mensaje de error completo
+2. Buscá el código de error en https://doc.rust-lang.org/error-index.html
+3. Preguntá en Discord
+4. No te frustres - es parte del aprendizaje
+
+---
+
+## 🎯 Lo más importante
+
+**No hay presión.** Este material es para que explores a tu ritmo.
+
+Las **tareas obligatorias llegarán más adelante** en el curso. Por ahora, disfrutá experimentando con los conceptos.
+
+**Rust es un marathon, no un sprint.** 🦈
+
+---
+
+## 📞 Canales de soporte
+
+**¿Te trabás en algo?**
+- 💬 Discord: Canal #rust-ayuda
+- 📅 Consultas en vivo: Miércoles/Jueves 19-20h
+- 📧 Email del programa: [contacto]
+
+**¿Querés compartir tu progreso?**
+- 🐦 Twitter: Etiqueta #TiburonasBuilders
+- 💬 Discord: Canal #show-and-tell
+
+---
+
+## 🦈 Mensaje final
+
+### Lo que lograste hoy
+
+No solo aprendiste sobre Rust. Dominaste conceptos fundamentales que te permiten escribir código seguro para blockchain:
+
+✅ Tipos de datos optimizados  
+✅ Ownership - seguridad por diseño  
+✅ Borrowing - eficiencia sin sacrificar seguridad  
+✅ Pattern matching - manejar todos los casos  
+✅ Storage persistente  
+✅ Tests para verificar
+
+**La mayoría de la gente que habla de blockchain no entiende estos conceptos. Vos ahora sí.** 🦈
+
+### El camino del Builder
+
+Como las tiburonas reales:
+- **Persistente:** Seguís nadando aunque el compilador te detenga
+- **Precisa:** Cada línea de código tiene un propósito
+- **Poderosa:** Dominás herramientas que previenen bugs millonarios
+- **Pionera:** Estás construyendo el futuro
+
+**No te compares con otros.** Compará con vos misma de ayer.
+
+### Siguiente paso
+
+La **Clase 4** profundizará en Structs y Enums. Vas a diseñar estructuras de datos complejas para aplicaciones reales.
+
+**Pero primero:** Disfrutá haber dominado los fundamentos. Experimentá. Jugá con el código.
+
+---
+
+🦈⚡ **¡Vamos a construir, Tiburonas!** ⚡🦈
+
+**Nos vemos en la Clase 4. Sigue construyendo, sigue nadando.**
+
+---
+
+> 💡 **Última reflexión:** Rust no es difícil porque sea mal diseñado. Es difícil porque te enseña a pensar en seguridad desde el día 1. Esa "dificultad" es en realidad entrenamiento para escribir código de producción de clase mundial.
     let mut to_balance = get_balance(env, to);
     
     from_balance -= amount;
@@ -888,13 +958,10 @@ La Clase 4 profundizará en Structs y Enums. Vas a diseñar estructuras de datos
 ## 📞 Canales de soporte
 
 **¿Te trabás en un ejercicio?**
-- 💬 Discord: Canal #rust-ayuda
-- 📅 Consultas en vivo: Miércoles/Jueves 19-20h
-- 📧 Email del programa: [contacto]
+- 📅 Consultas en vivo: Sábados
 
 **¿Querés compartir tu progreso?**
-- 🐦 Twitter: Etiqueta #TiburonasBuilders
-- 💬 Discord: Canal #show-and-tell
+- 🐦 Twitter: Etiqueta #TiburonasBuilders y arrobanos @buendiabuilders
 - 📸 Screenshot de tus tests pasando → ¡celebralo!
 
 **Recordá:** Preguntar no es debilidad. Es inteligencia. Todas las Tiburonas empezamos en el mismo lugar. 🦈
@@ -916,7 +983,7 @@ Antes de la próxima clase:
 
 ---
 
-🦈⚡ **¡Vamos a construir** ⚡🦈
+🦈⚡ **¡Vamos a construir!** ⚡🦈
 
 **Nos vemos en la Clase 4. Sigue construyendo, sigue nadando.**
 
