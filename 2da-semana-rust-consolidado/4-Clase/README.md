@@ -176,7 +176,7 @@ Esta es tu "primera clase de manejo" de contratos profesionales. La práctica vi
 ### Lo que usaremos HOY:
 
 1. **01-traits.md** → Explicación de traits con ejemplos
-2. **02-errores.md** → Result y Option demostrados
+2. **02-result-option.md** → Result y Option demostrados
 3. **03-storage.md** → Patrones de storage explicados
 4. **04-ejemplo-completo.md** → Hello World mejorado paso a paso
 
