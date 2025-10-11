@@ -201,7 +201,7 @@ impl HelloContract {
 ### Línea 1: Verificación de inicialización
 ```rust
 if env.storage().instance().has(&DataKey::Admin) {
-    return Err(Error::NoInicializado);
+    return Err(Error::YaInicializado);
 }
 ```
 
