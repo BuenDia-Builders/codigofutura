@@ -45,35 +45,47 @@ Mientras otras blockchains prometen el futuro, Stellar ya lo está construyendo:
 
 ---
 
-## 📅 Estructura del Curso (7 Semanas)
+## 🗺️ Roadmap de Clases (Octubre - Noviembre 2025)
 
-### **📺 Semana 0: Bienvenida** (Pregrabada)
-🎬 Instala Freighter, primera transacción, fundamentos blockchain
+```mermaid
+gantt
+    dateFormat  DD-MM-YYYY
+    title 🦈 Tiburona Builder 2025 - Roadmap de Clases
+    axisFormat  %d/%m
 
-### **🌟 Semana 1: Fundamentos Stellar**
-- **Clase 1**: Stellar Classic - Laboratory
-- **Clase 2**: Primer Smart Contract con CLI
+    section Semana 0
+    Bienvenida e instalación          :done, 01-10-2025, 06-10-2025
 
-### **🦀 Semana 2: Rust Consolidado**
-- **Clase 3**: Rust Básico para Soroban
-- **Clase 4**: Rust Avanzado (Errors, Storage)
+    section Semana 1 - Fundamentos Stellar
+    Clase 1 - Laboratory              :active, 07-10-2025, 07-10-2025
+    Clase 2 - Smart Contract CLI      :active, 09-10-2025, 09-10-2025
+    Refuerzo - Repaso                 :milestone, 11-10-2025, 1d
 
-### **⚡ Semana 3: Aplicación Intensiva** *(Crítica)*
-- **Clase 5**: Token Contract ERC-20-like
-- **Clase 6**: Frontend React + Freighter
-- **Sábado**: Assets Nativos y DEX ⚠️ Obligatorio
+    section Semana 2 - Rust Consolidado
+    Clase 3 - Rust Básico             :14-10-2025, 14-10-2025
+    Clase 4 - Rust Avanzado           :16-10-2025, 16-10-2025
+    Refuerzo - Rust                   :milestone, 18-10-2025, 1d
 
-### **🔗 Semana 4: Integración**
-- **Clase 7**: Token + Frontend Integrado
-- **Clase 8**: Soroban Avanzado (Events, Auth)
+    section Semana 3 - Aplicación Intensiva
+    Clase 5 - Token Contract          :21-10-2025, 21-10-2025
+    Clase 6 - Frontend + Freighter    :23-10-2025, 23-10-2025
+    Refuerzo - DEX y Assets           :milestone, 25-10-2025, 1d
 
-### **🏗️ Semana 5: Arquitectura y Seguridad**
-- **Clase 9**: Crowdfunding dApp Completa
-- **Clase 10**: Testing y Security
+    section Semana 4 - Integración
+    Clase 7 - Integración             :28-10-2025, 28-10-2025
+    Clase 8 - Soroban Avanzado        :30-10-2025, 30-10-2025
+    Refuerzo - Auth y Events          :milestone, 01-11-2025, 1d
 
-### **🏆 Semana 6: Hackathon**
-- **Clase 11**: Día 1 - Desarrollo
-- **Clase 12**: Día 2 - Presentaciones
+    section Semana 5 - Arquitectura y Seguridad
+    Clase 9 - Crowdfunding dApp       :04-11-2025, 04-11-2025
+    Clase 10 - Testing y Seguridad    :06-11-2025, 06-11-2025
+    Refuerzo - Testing dApp           :milestone, 08-11-2025, 1d
+
+    section Semana 6 - Hackathon
+    Hackathon Día 1                   :11-11-2025, 11-11-2025
+    Hackathon Día 2                   :13-11-2025, 13-11-2025
+    Demo Day 🎓                       :milestone, 15-11-2025, 1d
+```
 
 **📊 Ver [Roadmap Detallado](./ROADMAP.md)**
 
