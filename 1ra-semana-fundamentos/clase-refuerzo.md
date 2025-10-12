@@ -814,13 +814,6 @@ node_modules/
 .env
 .env.local
 
-# Archivos de IDE
-.vscode/
-.idea/
-
-# Archivos del sistema
-.DS_Store
-Thumbs.db
 ```
 
 ⚠️ **Importante**: 
