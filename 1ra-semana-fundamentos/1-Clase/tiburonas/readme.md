@@ -2,7 +2,7 @@
 
 Hola, equipo 💫
 
-En este espacio solo deberán subir su solución **las alumnas designadas para esta práctica**.  
+En este espacio solo deberán subir su solución **las tiburonas designadas para esta práctica**.  
 Si no estás en el grupo asignado, no es necesario que hagas un push aquí — ¡igual podés seguir practicando en tu rama local o carpeta personal! 💻
 
 👉 Recuerda:
