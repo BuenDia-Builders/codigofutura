@@ -1,0 +1,16 @@
+{
+  "name": "javascript-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^14.2.0",
+    "dotenv": "^17.2.3"
+  }
+}
