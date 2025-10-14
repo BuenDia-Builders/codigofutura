@@ -556,13 +556,10 @@ Las **tareas obligatorias llegarán más adelante** en el curso. Por ahora, disf
 ## 📞 Canales de soporte
 
 **¿Te trabás en algo?**
-- 💬 Discord: Canal #rust-ayuda
-- 📅 Consultas en vivo: Miércoles/Jueves 19-20h
-- 📧 Email del programa: [contacto]
+- 💬 Telegram en Consultas: Arrobanos y usa el #rust-ayuda
 
 **¿Querés compartir tu progreso?**
-- 🐦 Twitter: Etiqueta #TiburonasBuilders
-- 💬 Discord: Canal #show-and-tell
+- 🐦 Twitter: Usa #TiburonasBuilders y [arrobanos](https://x.com/buendiabuilders)
 
 ---
 
@@ -659,11 +656,6 @@ La **Clase 4** profundizará en Structs y Enums. Vas a diseñar estructuras de d
 - Código fuente de contratos de ejemplo
 - Tokens, NFTs, AMMs, y más
 - Perfecto para estudiar código real
-
-**Stellar Developers Discord**
-- 💬 Comunidad activa de desarrolladores
-- Canal #soroban para preguntas específicas
-- Ayuda en español disponible
 
 ### Herramientas para practicar
 
@@ -972,7 +964,7 @@ La Clase 4 profundizará en Structs y Enums. Vas a diseñar estructuras de datos
 
 Antes de la próxima clase:
 
-- [ ] Completar al menos 5 ejercicios de este documento
+- [ ] Completar al menos 5 ejercicios de este documento(de nuevo, no son obligatorios)
 - [ ] Escribir tests para todo tu código
 - [ ] Preguntar en Discord al menos UNA vez (rompe el hielo)
 - [ ] Leer Rust Book Capítulo 4 completo
