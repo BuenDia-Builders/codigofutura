@@ -89,9 +89,7 @@ Si algo falla, revisá las instrucciones de instalación de la Clase 1. ✅
 
 ---
 
-## 📍 Recordando la Clase 2
-
-En la Clase 2 escribiste este código (versión completa que vamos a analizar hoy):
+## 📍 Veamos este código:
 
 ```rust
 pub fn increment(env: Env) -> u32 {
