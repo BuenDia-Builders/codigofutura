@@ -249,6 +249,7 @@ Eres libre de usar, compartir, modificar y construir sobre este material.
 **TODO el código es para fines educativos.**
 
 ✅ Seguro para Testnet
+
 ❌ NO usar en producción sin auditoría
 
 **Usa siempre Testnet para practicar.**
