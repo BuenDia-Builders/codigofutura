@@ -1,0 +1,15 @@
+# Modules
+**/node_modules/
+
+# Logs
+logs
+*.log
+
+# Environment files
+.env.local
+.env.*.local
+.env.*.secret
+.env.secrets
+
+# Test
+*.txt
