@@ -1,0 +1,43 @@
+{
+  "name": "codigofutura-bdb-tarea2",
+  "version": "1.0.0",
+  "description": "Tarea 2 - Fundamentos de Programación Stellar - Código Futura x Buen Día Builders",
+  "main": "crear-cuenta.js",
+  "type": "module",
+  "scripts": {
+    "crear-cuenta": "node crear-cuenta.js",
+    "enviar-pago": "node enviar-pago.js",
+    "consultar-balance": "node consultar-balance.js",
+    "start": "node crear-cuenta.js",
+    "test": "npm run crear-cuenta && npm run enviar-pago && npm run consultar-balance"
+  },
+  "keywords": [
+    "stellar",
+    "blockchain",
+    "cryptocurrency",
+    "javascript",
+    "codigo-futura",
+    "buen-dia-builders"
+  ],
+  "author": {
+    "name": "Kaream Badillo",
+    "email": "kaream.badillo@usach.cl"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^14.2.0",
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaream-badillo/codigofutura-bdb.git"
+  },
+  "homepage": "https://github.com/kaream-badillo/codigofutura-bdb#readme",
+  "bugs": {
+    "url": "https://github.com/kaream-badillo/codigofutura-bdb/issues"
+  }
+}

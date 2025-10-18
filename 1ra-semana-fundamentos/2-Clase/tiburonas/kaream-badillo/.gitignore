@@ -1,0 +1,21 @@
+# Carpeta de código de referencia
+ejemplos-codigo/
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de entorno (credenciales)
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.temp
