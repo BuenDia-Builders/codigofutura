@@ -646,10 +646,9 @@ wsl --update
 Has deployado exitosamente tu token usando WSL, el entorno profesional para desarrollo blockchain en Windows.
 
 ### Próximos Pasos:
-1. 📱 **Clase 6:** Integrar con Freighter Wallet
-2. 🖥️ **Clase 6:** Crear frontend con Scaffold Stellar
-3. 📊 **Clase 7:** Analytics y monitoring
-4. 🔄 **Clase 7:** Integración con DEX
+
+-  🖥️ **Clase 6:** Crear frontend con Scaffold Stellar
+
 
 ---
 
