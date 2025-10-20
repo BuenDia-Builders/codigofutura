@@ -1,275 +1,390 @@
-# 🏆 Desafío Post-Clase
+# 🏆 Desafío Post-Clase (Opcional pero Recomendado)
 
-## 🎯 Mini Desafío: "Token Analytics" (30 minutos)
+## 🎯 Objetivo: Consolidar lo Aprendido
 
-### 📋 Descripción
-Después de la clase, implementa una función que proporcione análisis básicos de tu token. Este desafío te ayudará a consolidar lo aprendido sin ser abrumador.
+Después de la clase, te sugerimos implementar tu propio Token BDB y probar que funciona correctamente. Este desafío es **opcional** pero **altamente recomendado** para consolidar tu aprendizaje.
 
-**Tiempo estimado:** 30 minutos  
-**Dificultad:** ⭐⭐☆☆☆  
-**Cuándo hacerlo:** En casa, después de la clase
+**⏱️ Tiempo estimado:** 20-30 minutos  
+**📊 Dificultad:** ⭐⭐☆☆☆ (Básica)  
+**📅 Cuándo:** En casa, el mismo día o al día siguiente de la clase
 
-### 🎯 Objetivo
-Agregar una función `get_analytics` que retorne estadísticas básicas del token.
+---
 
-### 📝 Especificaciones
+## 📋 Lo Que Vas a Hacer
 
-```rust
-// Agregar en storage.rs
-#[contracttype]
-pub struct TokenAnalytics {
-    pub total_holders: u32,      // Número de cuentas con balance > 0
-    pub largest_holder: Address,  // Dirección con mayor balance
-    pub average_balance: u128,    // Balance promedio (total_supply / holders)
-}
+1. ✅ Configurar el proyecto desde cero
+2. ✅ Copiar el código del Token BDB
+3. ✅ Compilar el contrato
+4. ✅ Ejecutar 3 tests básicos
+5. 🌟 (Opcional) Añadir validaciones extras
+6. 🚀 (Opcional) Deployar en testnet
 
-// Agregar en lib.rs
-fn get_analytics(env: Env) -> TokenAnalytics {
-    // TODO: Implementar
-    // Pista 1: Necesitarás iterar sobre los balances
-    // Pista 2: Considera guardar una lista de holders en storage
-    // Pista 3: Actualiza la lista en mint/transfer/burn
-}
+---
+
+## 🚀 Paso a Paso
+
+### Paso 1: Configurar el Proyecto (5 min)
+
+Abre PowerShell y ejecuta:
+
+```powershell
+# Crear carpeta del proyecto
+mkdir token_bdb
+cd token_bdb
+
+# Inicializar proyecto Rust
+cargo init --lib
 ```
 
-### 💡 Pistas de Implementación
+**💡 Qué está pasando:**
+- `cargo init --lib` crea un proyecto de librería (necesario para contratos Soroban)
+- Esto genera `Cargo.toml` y `src/lib.rs` automáticamente
 
-#### Opción A: Simple (Recomendada para empezar)
-```rust
-// En storage.rs, agregar:
-pub enum DataKey {
-    // ... otros campos
-    Holders,  // Vec<Address> de todos los holders
-}
+---
 
-// Actualizar en mint/transfer/burn cuando un balance cambia:
-fn update_holders_list(env: &Env, account: Address, new_balance: u128) {
-    let mut holders: Vec<Address> = env.storage().instance()
-        .get(&DataKey::Holders)
-        .unwrap_or(Vec::new(&env));
-    
-    if new_balance > 0 && !holders.contains(&account) {
-        holders.push_back(account);
-    } else if new_balance == 0 && holders.contains(&account) {
-        // Remover de la lista
-        holders.retain(|h| h != &account);
-    }
-    
-    env.storage().instance().set(&DataKey::Holders, &holders);
-}
+### Paso 2: Copiar el Código (5 min)
+
+Copia los archivos del documento **03-codigo-completo.md** a tu proyecto:
+
+```
+token_bdb/
+├── Cargo.toml          # Copiar el contenido completo
+└── src/
+    ├── lib.rs          # Copiar el contrato principal
+    ├── storage.rs      # Copiar tipos de datos
+    ├── errors.rs       # Copiar errores
+    └── test.rs         # Copiar los tests
 ```
 
-#### Opción B: Más Eficiente
-```rust
-// Mantener un contador en lugar de una lista
-pub enum DataKey {
-    // ... otros campos
-    HolderCount,      // u32
-    LargestHolder,    // Address
-    LargestBalance,   // u128
-}
+**⚠️ Importante:** Verifica que tu `Cargo.toml` tenga:
 
-// Actualizar contadores en cada operación
-```
+```toml
+[dependencies]
+soroban-sdk = "23.0.2"
 
-### 🧪 Test para tu Implementación
-
-```rust
-#[test]
-fn test_analytics() {
-    let env = Env::default();
-    let contract_id = env.register_contract(None, TokenBDB);
-    let client = TokenBDBClient::new(&env, &contract_id);
-    
-    // Setup
-    let admin = Address::generate(&env);
-    let alice = Address::generate(&env);
-    let bob = Address::generate(&env);
-    let charlie = Address::generate(&env);
-    
-    client.initialize(/* ... */).unwrap();
-    
-    env.mock_all_auths();
-    
-    // Distribuir tokens
-    client.mint(&alice, &5000).unwrap();
-    client.mint(&bob, &3000).unwrap();
-    client.mint(&charlie, &2000).unwrap();
-    
-    // Obtener analytics
-    let stats = client.get_analytics();
-    
-    // Verificar
-    assert_eq!(stats.total_holders, 3);
-    assert_eq!(stats.largest_holder, alice);
-    assert_eq!(stats.average_balance, 3333); // (5000+3000+2000)/3
-}
-```
-
-### ✅ Criterios de Éxito
-
-Tu implementación está completa si:
-- [ ] La función retorna los 3 valores correctamente
-- [ ] Se actualiza cuando cambian los balances
-- [ ] Los tests pasan
-- [ ] No afecta el gas significativamente
-
-### 🎁 Bonus (Opcional, +15 min)
-
-Si terminas rápido, agrega:
-```rust
-pub struct TokenAnalytics {
-    // ... campos existentes
-    pub total_transactions: u64,  // Contador de todas las transfers
-    pub total_minted: u128,        // Total histórico minteado
-    pub total_burned: u128,        // Total histórico quemado
-}
+[dev-dependencies]
+soroban-sdk = { version = "23.0.2", features = ["testutils"] }
 ```
 
 ---
 
-## 🚀 Desafíos Opcionales para la Semana
+### Paso 3: Compilar el Contrato (3 min)
 
-### 📝 Desafío 2: Balance Formateado (20 min)
-**Dificultad:** ⭐⭐☆☆☆
+```powershell
+# Instalar target wasm (solo la primera vez)
+rustup target add wasm32-unknown-unknown
 
-```rust
-fn balance_formatted(env: Env, account: Address) -> String {
-    let balance = Self::balance(env.clone(), account);
-    let decimals = Self::decimals(env.clone());
-    
-    // Convertir 1000000 con 6 decimales → "1.000000"
-    // TODO: Implementar formato con punto decimal
-}
+# Compilar con Stellar CLI
+stellar contract build
 ```
 
-### 📝 Desafío 3: Token Pausable (45 min)
-**Dificultad:** ⭐⭐⭐☆☆
-
-```rust
-fn pause(env: Env) -> Result<(), TokenError>;
-fn unpause(env: Env) -> Result<(), TokenError>;
-fn is_paused(env: Env) -> bool;
-
-// Modificar transfer para verificar:
-if Self::is_paused(env.clone()) {
-    return Err(TokenError::ContractPaused);
-}
+**✅ Resultado esperado:**
+```
+   Compiling token_bdb v0.1.0
+    Finished release [optimized] target(s) in 12.34s
 ```
 
-### 📝 Desafío 4: Max Supply (30 min)
-**Dificultad:** ⭐⭐⭐☆☆
+Esto genera: `target/wasm32-unknown-unknown/release/token_bdb.wasm`
 
-Implementar un límite máximo de supply que no se pueda exceder en `mint`.
+**🐛 Si ves errores:**
+- Verifica que copiaste todos los archivos correctamente
+- Revisa que los `use` statements en cada archivo sean correctos
+- Ejecuta `cargo clean` y vuelve a compilar
 
 ---
 
-## 🎯 Para la Clase 6: Scaffold Stellar
+### Paso 4: Ejecutar 3 Tests Básicos (5 min)
 
-### ¿Qué es Scaffold Stellar?
+Ejecuta estos 3 tests esenciales uno por uno:
 
-[Scaffold Stellar](https://scaffoldstellar.com/) es una herramienta que proporciona:
-- 🛠️ Boilerplate para dApps en Stellar
-- 🎨 Componentes UI pre-construidos
-- 🔧 Integración con wallets lista
-- ⚡ Hot reload y desarrollo rápido
+```powershell
+# Test 1: Verificar que el token se inicializa correctamente
+cargo test test_initialize -- --nocapture
 
-### ¿Lo usaremos en Clase 6?
+# Test 2: Verificar que se pueden mintear tokens
+cargo test test_mint_and_balance -- --nocapture
 
-**SÍ**, Scaffold Stellar será perfecto para la Clase 6 porque:
-
-1. **Acelera el desarrollo frontend**
-   - No reinventamos la rueda
-   - Componentes probados y optimizados
-
-2. **Mejores prácticas incluidas**
-   - Manejo de errores
-   - Loading states
-   - Wallet connection
-
-3. **Compatible con nuestro token**
-   - Soporta contratos custom
-   - Fácil integración
-
-### Preparación para Clase 6
-
-En la Clase 6 comenzaremos con JavaScript/TypeScript para el frontend:
-
-```bash
-# Para la Clase 6 (no ahora) instalaremos:
-# - React
-# - Stellar SDK (JavaScript)
-# - Freighter Wallet
-# - Scaffold Stellar
-
-# Por ahora, solo asegúrate de que tu token funcione perfectamente en Rust
+# Test 3: Verificar que las transferencias funcionan
+cargo test test_transfer -- --nocapture
 ```
 
-La Clase 5 es 100% Rust. JavaScript vendrá en la Clase 6 cuando construyamos la interfaz web.
+**✅ Si los 3 tests pasan:**
+¡Felicitaciones! Tu token está funcionando correctamente. Pasaste el desafío básico. 🎉
 
-### Preview de lo que construirás:
-- 🖥️ Dashboard con balance y supply
-- 💸 Interfaz para transfer
-- 🔐 Approve y allowances UI
-- 📊 Analytics en tiempo real
-- 🎨 Diseño profesional
+**❌ Si algún test falla:**
+Lee el mensaje de error cuidadosamente. Probablemente sea:
+- Código copiado incorrectamente
+- Falta algún import
+- Tipos de datos incorrectos
 
 ---
 
-## 📊 Tiempo de Inversión Real
+## 🌟 Desafíos Opcionales (Si Quieres Más)
+
+### Opción A: Agregar Validaciones (10 min extra)
+
+**Objetivo:** Validar que `name` y `symbol` no estén vacíos al inicializar.
+
+**1. Modificar `errors.rs`:**
+Ya está el error `InvalidMetadata` en el código.
+
+**2. La validación ya está implementada en `lib.rs`:**
+```rust
+// En la función initialize:
+if name.len() == 0 || name.len() > MAX_NAME_LENGTH {
+    return Err(TokenError::InvalidMetadata);
+}
+```
+
+**3. Ejecutar tests de validación:**
+```powershell
+cargo test test_initialize_empty_name_fails
+cargo test test_initialize_empty_symbol_fails
+```
+
+**✅ Criterio de éxito:** Ambos tests pasan.
+
+---
+
+### Opción B: Deployar en Testnet (15 min extra)
+
+**Requisitos previos:**
+- Tener Stellar CLI instalado
+- Crear una cuenta en testnet
+
+**Paso 1: Crear cuenta y obtener fondos**
+
+```powershell
+# Generar una identidad
+stellar keys generate alice --network testnet
+
+# Ver tu dirección pública
+stellar keys address alice
+
+# Fondear con XLM gratis de testnet
+# (Reemplaza <TU_ADDRESS> con la dirección que obtuviste)
+curl "https://friendbot.stellar.org?addr=<TU_ADDRESS>"
+```
+
+**Paso 2: Deployar el contrato**
+
+```powershell
+stellar contract deploy `
+  --wasm target\wasm32-unknown-unknown\release\token_bdb.wasm `
+  --source alice `
+  --network testnet
+```
+
+**💡 Guarda el CONTRACT_ID que te devuelve!**
+
+**Paso 3: Inicializar tu token**
+
+```powershell
+# Reemplaza <CONTRACT_ID> y <ADMIN_ADDRESS>
+stellar contract invoke `
+  --id <CONTRACT_ID> `
+  --source alice `
+  --network testnet `
+  -- initialize `
+  --admin <ADMIN_ADDRESS> `
+  --name "Buen Dia Token" `
+  --symbol "BDB" `
+  --decimals 7
+```
+
+**Paso 4: Mintear tus primeros tokens**
+
+```powershell
+stellar contract invoke `
+  --id <CONTRACT_ID> `
+  --source alice `
+  --network testnet `
+  -- mint `
+  --to <TU_ADDRESS> `
+  --amount 10000000000000
+```
+
+**Nota:** 10000000000000 = 1,000,000 tokens (con 7 decimales)
+
+**✅ Verificar en Stellar Laboratory:**
+1. Ve a https://laboratory.stellar.org/
+2. Busca tu CONTRACT_ID
+3. Verifica que tu token existe en testnet
+
+---
+
+## ✅ Criterios de Éxito
+
+Has completado el desafío si logras:
+
+### Nivel Básico (Requerido)
+- [ ] ✅ El proyecto compila sin errores
+- [ ] ✅ Los 3 tests pasan: `initialize`, `mint_and_balance`, `transfer`
+- [ ] ✅ Entiendes qué hace cada test
+
+### Nivel Intermedio (Opcional)
+- [ ] 🌟 Tests de validación pasan
+- [ ] 🌟 Agregaste al menos 1 test adicional propio
+
+### Nivel Avanzado (Opcional)
+- [ ] 🚀 Token deployado en testnet
+- [ ] 🚀 Minteaste tokens exitosamente
+- [ ] 🚀 Verificaste en Stellar Laboratory
+
+---
+
+## 🐛 Troubleshooting Común
+
+### Error: "can't find crate for core"
+
+**Solución:**
+```powershell
+rustup target add wasm32-unknown-unknown
+rustup show  # Verificar que está instalado
+```
+
+---
+
+### Error: "no field `to_string` on type `Symbol`"
+
+**Causa:** Código desactualizado del material de clase.
+
+**Solución:** Verifica que estés usando `String` (no `Symbol`) para `name` y `symbol`:
+```rust
+// ✅ Correcto
+fn initialize(env: Env, admin: Address, name: String, symbol: String, decimals: u32)
+
+// ❌ Incorrecto
+fn initialize(env: Env, admin: Address, name: Symbol, symbol: Symbol, decimals: u32)
+```
+
+---
+
+### Tests fallan con "NotInitialized"
+
+**Causa:** Olvidaste llamar `initialize()` antes de las operaciones.
+
+**Solución:**
+```rust
+// ✅ Siempre inicializar primero en los tests
+client.initialize(&admin, &name, &symbol, &7).unwrap();
+env.mock_all_auths();
+client.mint(&user, &1000).unwrap();  // Ahora sí funciona
+```
+
+---
+
+### Stellar CLI no reconoce comandos
+
+**Causa:** Stellar CLI no está en tu PATH.
+
+**Solución:**
+1. Verifica instalación: `stellar --version`
+2. Si falla, reinstala desde: https://developers.stellar.org/docs/tools/developer-tools
+
+---
+
+## 💡 Tips para el Éxito
+
+### 1. No te apures
+- Lee cada error cuidadosamente
+- Google es tu amigo
+- La documentación de Soroban es excelente
+
+### 2. Usa los comentarios del código
+- El código del material tiene comentarios explicativos
+- Úsalos para entender qué hace cada parte
+
+### 3. Experimenta
+- Cambia valores en los tests
+- Prueba casos edge (0, negativos, muy grandes)
+- Rompe cosas a propósito para ver qué pasa
+
+### 4. Pide ayuda si la necesitas
+- La comunidad de Stellar es muy activa
+- Discord de Stellar Developers
+- Grupo de Buen Día Builders
+
+---
+
+## 📊 Inversión de Tiempo Real
 
 | Actividad | Tiempo | Prioridad |
 |-----------|--------|-----------|
-| Desafío Principal (Analytics) | 30 min | ⭐⭐⭐ Alta |
-| Test del desafío | 10 min | ⭐⭐⭐ Alta |
-| Desafío Balance Format | 20 min | ⭐⭐ Media |
-| Desafío Pausable | 45 min | ⭐ Opcional |
-| Preparar Scaffold | 15 min | ⭐⭐⭐ Para Clase 6 |
+| Setup + Copiar código | 10 min | ⭐⭐⭐ Obligatorio |
+| Compilar | 3 min | ⭐⭐⭐ Obligatorio |
+| Correr 3 tests | 5 min | ⭐⭐⭐ Obligatorio |
+| Validaciones extras | 10 min | ⭐⭐ Recomendado |
+| Deploy en testnet | 15 min | ⭐ Opcional |
 
-**Total mínimo requerido:** 40 minutos  
-**Total si haces todo:** 2 horas
+**Tiempo mínimo:** 18 minutos  
+**Tiempo con todo:** 43 minutos
 
 ---
 
-## 💡 Tips para el Desafío Principal
+## 🎓 ¿Qué Aprendiste?
 
-1. **Empieza simple**: No optimices prematuramente
-2. **Test primero**: Escribe el test antes del código
-3. **Incrementa gradualmente**: Primero `total_holders`, luego el resto
-4. **No te preocupes por gas**: En testnet es gratis
+Al completar este desafío, habrás:
 
-### Errores Comunes a Evitar
+✅ **Configurado** un proyecto Soroban desde cero  
+✅ **Compilado** un smart contract a WASM  
+✅ **Ejecutado** tests unitarios  
+✅ **Entendido** el flujo completo de desarrollo  
+✅ **Verificado** que tu token funciona correctamente  
+🌟 **Optativo:** Deployado en una blockchain real (testnet)
 
-```rust
-// ❌ No hagas esto
-let all_balances = /* obtener TODOS los balances */; // Muy costoso
+---
 
-// ✅ Haz esto
-let holder_count = env.storage().instance()
-    .get(&DataKey::HolderCount)
-    .unwrap_or(0);
+## 🔗 Próximos Pasos
+
+### Para la Clase 6: Frontend con Scaffold Stellar
+
+En la próxima clase construiremos una interfaz web para nuestro token usando:
+- **React + TypeScript**
+- **Scaffold Stellar** (https://github.com/theahaco/scaffold-stellar)
+- **Freighter Wallet** para firmar transacciones
+- **Componentes UI** pre-construidos
+
+**¿Qué necesitas hacer ahora?**
+- ✅ Completar este desafío (tu token debe funcionar)
+- ✅ Tener tu token deployado en testnet (para conectarlo al frontend)
+- ✅ Instalar Freighter Wallet (lo haremos juntas en la clase)
+
+**NO necesitas:**
+- ❌ Saber React avanzado (partimos desde cero)
+- ❌ Instalar nada de JavaScript aún
+- ❌ Preocuparte por el frontend ahora
+
+
+---
+
+## Comparte tu Progreso en tus Redes Sociales preferidas (nosotras lo vamos a hacer)
+
+1. 📸 **Captura de pantalla** de los tests pasando
+2. 🔗 **Contract ID** si lo deployaste en testnet
+3. 💬 **Comparte** en el grupo de Buen Día Builders y en las redes
+
+**Formato sugerido pero obvio podes escribir lo que vos quieras:**
+```
+✅ Desafío completado!
+Tests: 3/3 pasando 
+Deploy: [SÍ/NO]
+Contract ID: [si aplicable]
+Tiempo: [cuánto tardaste]
+Comentario: [lo que más te costó o gustó]
 ```
 
 ---
 
-## 🏆 Sistema de Validación
-
-Cuando completes el desafío, verifica:
-
-```bash
-# 1. Que compile
-cargo build --target wasm32-unknown-unknown --release
-
-# 2. Que los tests pasen
-cargo test test_analytics
-
-# 3. Que funcione en testnet
-stellar contract invoke \
-    --id $TOKEN_CONTRACT_ID \
-    --network testnet \
-    -- get_analytics
-```
+*"El mejor momento para consolidar el aprendizaje es justo después de la clase, cuando todo está fresco en tu mente" 🦈*
 
 ---
 
-*"Un pequeño desafío después de clase consolida el aprendizaje mejor que horas de teoría" 🦈*
+## 📚 Referencias Útiles
+
+- [Soroban Getting Started](https://developers.stellar.org/docs/build/smart-contracts)
+- [Stellar CLI Docs](https://developers.stellar.org/docs/tools/stellar-cli)
+- [Token Example](https://github.com/stellar/soroban-examples/tree/main/token)
+- [Testnet Friendbot](https://friendbot.stellar.org)
+
+**¿Preguntas? ¡Nos vemos en la Clase 6! 🚀**
