@@ -9,13 +9,6 @@
 - [ ] Deploy exitoso en testnet
 - [ ] Operaciones básicas funcionando
 
-### Validación de Aprendizaje:
-- [ ] Entiendes la diferencia entre Instance y Persistent storage
-- [ ] Sabes manejar errores con Result<T, Error>
-- [ ] Comprendes el sistema de TTL
-- [ ] Puedes explicar el flujo de allowances
-- [ ] Dominas el deployment con Stellar CLI
-
 ---
 
 ## 🚀 Hacia la Clase 6: Integración con Frontend
@@ -67,81 +60,6 @@ En la Clase 6 aprenderás a:
 
 ---
 
-## 💪 Ejercicios de Práctica
-
-### Nivel Básico (Esta Semana)
-1. **Añade función `transfer_batch`**
-   - Transferir a múltiples destinatarios
-   - Una sola transacción
-   - Validar balance total
-
-2. **Implementa `get_metadata`**
-   - Retornar todos los datos del token en un struct
-   - Name, symbol, decimals, supply en una llamada
-
-3. **Crea tests de integración**
-   - Simular flujo completo de usuario
-   - Mint → Transfer → Approve → TransferFrom → Burn
-
-### Nivel Intermedio (Próxima Semana)
-1. **Token Vesting Contract**
-   - Liberar tokens gradualmente
-   - Schedule configurable
-   - Claim function
-
-2. **Snapshot Mechanism**
-   - Guardar balances en un momento específico
-   - Útil para votaciones o airdrops
-
-3. **Multi-Sig Admin**
-   - Requerir múltiples firmas para mint/burn
-   - Threshold configurable
-
-### Nivel Avanzado (Opcional)
-1. **Cross-Contract Calls**
-   - Tu token interactuando con otros contratos
-   - DEX integration ready
-
-2. **Oracle Integration**
-   - Price feeds
-   - Dynamic fees basados en precio
-
-3. **Upgradeable Token**
-   - Proxy pattern en Soroban
-   - Migration strategy
-
----
-
-## 🏗️ Proyecto Final Sugerido
-
-### "Builder DEX" - Mini Exchange para tu Token
-
-Combina todo lo aprendido:
-1. **Smart Contracts** (Clases 3-5)
-   - Token contract ✅
-   - Liquidity pool contract
-   - Swap contract
-
-2. **Frontend** (Clase 6)
-   - React app
-   - Wallet integration
-   - Real-time updates
-
-3. **Features**
-   - Add/Remove liquidity
-   - Token swaps
-   - Price charts
-   - Transaction history
-
----
-
-## 🤝 Comunidad y Soporte
-
-### Canales Oficiales
-- 🌐 [Stellar Discord](https://discord.gg/stellar)
-- 🌐 [Soroban Discord Channel](https://discord.gg/soroban)
-- 🌐 [Stellar Developers Forum](https://stellarcommunity.org)
-
 ### Buen Día Builders
 - 💬 [Telegram Grupo](https://t.me/buendiabuilders)
 - 🐦 [Twitter/X](https://x.com/buendiabuilders)
@@ -152,24 +70,6 @@ Combina todo lo aprendido:
 - Tag: `soroban`
 
 ---
-
-## 📊 Plan de Estudio Recomendado
-
-### Semana 3 (Post-Clase 5)
-```
-Lunes: Review código del token, optimizaciones
-Martes: CLASE 5 ✅
-Miércoles: Implementar desafíos, estos no son entregables
-Jueves: Preparar para Clase 6
-Viernes: Intentar lograr la unión de la clase 5 y 6
-Sábado: REFUERZO - Assets y DEX
-
----
-
-### Has Desbloqueado:
-- 🏆 **Token Developer Badge**
-- 🏆 **Soroban Builder Status**
-- 🏆 **Ready for Frontend Integration**
 
 ### Habilidades Adquiridas:
 - ✅ Smart Contract Development
@@ -202,35 +102,13 @@ Si puedes responder SÍ a todo:
 - [ ] Entiendo cada línea del código
 - [ ] Puedo explicar las decisiones de diseño
 - [ ] Mis tests cubren casos edge
-- [ ] Estoy list@ para agregar frontend
+- [ ] Estoy lista para agregar frontend
 
 **¡Entonces estás 100% preparad@ para la Clase 6! 🚀**
 
 ---
 
 *"El camino de Web2 a Web3 developer no es un sprint, es un maratón. Pero acabas de completar una etapa crucial. ¡Sigue nadando, Tiburona!" 🦈*
-
----
-
-### 📝 Notas Personales
-
-Espacio para tus apuntes:
-
-```
-// Mis aprendizajes clave:
-// 1. 
-// 2. 
-// 3. 
-
-// Lo que más me costó:
-// 
-
-// Lo que más disfruté:
-// 
-
-// Ideas para mi proyecto:
-// 
-```
 
 ---
 
