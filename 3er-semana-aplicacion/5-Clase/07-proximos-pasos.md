@@ -159,22 +159,12 @@ Combina todo lo aprendido:
 ```
 Lunes: Review código del token, optimizaciones
 Martes: CLASE 5 ✅
-Miércoles: Implementar desafíos 1-2
-Jueves: Implementar desafío 3
-Viernes: Preparar para Clase 6
+Miércoles: Implementar desafíos, estos no son entregables
+Jueves: Preparar para Clase 6
+Viernes: Intentar lograr la unión de la clase 5 y 6
 Sábado: REFUERZO - Assets y DEX
-Domingo: Proyecto personal
-```
-
-### Hacia el Hackathon
-- **Semana 4**: Frontend + Integration
-- **Semana 5**: DeFi/DEX concepts
-- **Semana 6**: Polish + Presentation
-- **Semana 7**: Hackathon!
 
 ---
-
-## 🎓 Certificación de Progreso
 
 ### Has Desbloqueado:
 - 🏆 **Token Developer Badge**
