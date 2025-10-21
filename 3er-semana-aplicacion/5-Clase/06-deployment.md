@@ -150,7 +150,8 @@ rustup target add wasm32v1-none:bash
 
 # Verificar
 rustup target list | grep wasm32
-# Expected: wasm32-unknown-unknown (installed)
+# Expected: wasm32v1-none
+ (installed)
 ```
 
 ---
@@ -221,7 +222,8 @@ cargo clean
 stellar contract build
 
 # Verificar que se generó el archivo
-ls -lh target/wasm32-unknown-unknown/release/token_bdb.wasm
+ls -lh target/wasm32v1-none
+/release/token_bdb.wasm
 # Expected: ~50-100 KB
 ```
 
@@ -491,7 +493,7 @@ stellar contract build
 # Deploy
 echo -e "\n🌐 Deploying to testnet..."
 CONTRACT_ID=$(stellar contract deploy \
-    --wasm target/wasm32-unknown-unknown/release/token_bdb.wasm \
+    --wasm target/wasm32-none/release/token_bdb.wasm \
     --source alice \
     --network testnet)
 
@@ -560,7 +562,8 @@ chmod +x deploy.sh
 **Solución:** Deploy un nuevo contrato
 ```bash
 stellar contract deploy \
-    --wasm target/wasm32-unknown-unknown/release/token_bdb.wasm \
+    --wasm target/wasm32v1-none
+/release/token_bdb.wasm \
     --source alice \
     --network testnet
 ```
