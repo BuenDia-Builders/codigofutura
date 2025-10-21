@@ -655,4 +655,4 @@ Has deployado exitosamente tu token usando WSL, el entorno profesional para desa
 
 ---
 
-*"WSL: Donde Windows conoce Linux, y los desarrolladores tienen lo mejor de ambos mundos 🦈"*
+*"WSL: Donde Windows conoce Linux, y las desarrolladoras tienen lo mejor de ambos mundos 🦈"*
