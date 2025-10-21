@@ -84,7 +84,7 @@ stellar contract build
     Finished release [optimized] target(s) in 12.34s
 ```
 
-Esto genera: `target/wasm32-unknown-unknown/release/token_bdb.wasm`
+Esto genera: `target/wasm32-none/release/token_bdb.wasm`
 
 **🐛 Si ves errores:**
 - Verifica que copiaste todos los archivos correctamente
@@ -170,7 +170,7 @@ curl "https://friendbot.stellar.org?addr=<TU_ADDRESS>"
 
 ```powershell
 stellar contract deploy `
-  --wasm target\wasm32-unknown-unknown\release\token_bdb.wasm `
+  --wasm target\wasm32-none\release\token_bdb.wasm `
   --source alice `
   --network testnet
 ```
@@ -239,7 +239,7 @@ Has completado el desafío si logras:
 
 **Solución:**
 ```powershell
-rustup target add wasm32-unknown-unknown
+rustup target add wasm32-none
 rustup show  # Verificar que está instalado
 ```
 
@@ -362,9 +362,17 @@ En la próxima clase construiremos una interfaz web para nuestro token usando:
 
 1. 📸 **Captura de pantalla** de los tests pasando
 2. 🔗 **Contract ID** si lo deployaste en testnet
-3. 💬 **Comparte** en el grupo de Buen Día Builders y en las redes
+3. 💬 **Comparte** en el grupo de Buen Día Builders y en las redes arrobandonos
+   - X https://x.com/buendiabuilders
+   - Instragam https://www.instagram.com/buendia_builders/
+   - LinkedIn https://www.linkedin.com/company/buen-dia-builders
+   - y otras redes important!
+       - https://x.com/lumenloop
+       - https://x.com/BuildOnStellar
+       - https://www.instagram.com/stellarorg/
+       - https://www.linkedin.com/company/stellar-development-foundation      
 
-**Formato sugerido pero obvio podes escribir lo que vos quieras:**
+**Formato sugerido pero obvio te animamos a escribir lo que vos quieras:**
 ```
 ✅ Desafío completado!
 Tests: 3/3 pasando 
