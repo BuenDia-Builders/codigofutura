@@ -70,8 +70,7 @@ graph TB
 ## 💻 Código Quick Start
 
 ```bash
-# Clonar el proyecto base
-git clone https://github.com/buendiabuilders/token-bdb
+# Clonar el proyecto base que se encuentra en 3er-semana-aplicacion/5-Clase/03-codigo-completo.md, create una carpeta para token-bdb
 cd token-bdb
 
 # Instalar dependencias y compilar
@@ -85,7 +84,7 @@ stellar contract build
 
 # Deploy a testnet
 stellar contract deploy \
-    --wasm target/wasm32-unknown-unknown/release/token_bdb.wasm \
+    --wasm target/wasm32-none/release/token_bdb.wasm \
     --source alice \
     --network testnet
 ```
