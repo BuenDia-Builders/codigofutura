@@ -42,7 +42,8 @@ Al finalizar esta clase, las Tiburonas Builders podrán:
 - Integración automática con DEXs
 - Interoperabilidad entre contratos
 
-### Funciones Core de un Token
+### Funciones Core de un Token, podes buscarlo en 3er-semana-aplicacion/5-Clase/lib.rs
+
 1. **initialize()** - Configurar el token (nombre, símbolo, decimales)
 2. **mint()** - Crear nuevos tokens (solo admin)
 3. **burn()** - Destruir tokens permanentemente
