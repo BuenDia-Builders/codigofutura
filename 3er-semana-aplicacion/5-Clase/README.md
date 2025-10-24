@@ -71,7 +71,7 @@ graph TB
 
 ```bash
 # Clonar el proyecto base que se encuentra en 3er-semana-aplicacion/5-Clase/03-codigo-completo.md, create una carpeta para token-bdb
-cd token-bdb
+Y busca el token BdB que esta en lib.rs
 
 # Instalar dependencias y compilar
 cargo build
