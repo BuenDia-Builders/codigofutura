@@ -69,19 +69,19 @@ gantt
     section Semana 3 - Aplicación Intensiva
     Clase 5 - Token Contract          :21-10-2025, 21-10-2025
     Clase 6 - Frontend + Freighter    :23-10-2025, 23-10-2025
-    Refuerzo - DEX y Assets           :milestone, 25-10-2025, 1d
+    Refuerzo - Scaffold + Freighter   :milestone, 25-10-2025, 1d
 
     section Semana 4 - Integración
-    Clase 7 - Integración             :28-10-2025, 28-10-2025
-    Clase 8 - Soroban Avanzado        :30-10-2025, 30-10-2025
-    Refuerzo - Auth y Events          :milestone, 01-11-2025, 1d
+    Clase 7 - Front + Back + Contratos:28-10-2025, 28-10-2025
+    Clase 8 - Integración con productos:30-10-2025, 30-10-2025
+    Refuerzo - Producto          :milestone, 01-11-2025, 1d
 
     section Semana 5 - Arquitectura y Seguridad
     Clase 9 - Crowdfunding dApp       :04-11-2025, 04-11-2025
-    Clase 10 - Testing y Seguridad    :06-11-2025, 06-11-2025
-    Refuerzo - Testing dApp           :milestone, 08-11-2025, 1d
+    Clase 10 - Integración    :06-11-2025, 06-11-2025
+    Refuerzo - Producto               :milestone, 08-11-2025, 1d
 
-    section Semana 6 - Hackathon
+    section Semana 6 - Tips Hackathon
     Hackathon Día 1                   :11-11-2025, 11-11-2025
     Hackathon Día 2                   :13-11-2025, 13-11-2025
     Demo Day 🎓                       :milestone, 15-11-2025, 1d
@@ -101,7 +101,7 @@ stellar-course/
 ├── semana-3-aplicacion/         # Clases 5-6 + Sábado
 ├── semana-4-integracion/        # Clases 7-8
 ├── semana-5-arquitectura/       # Clases 9-10
-├── semana-6-hackathon/          # Clases 11-12
+├── semana-6-hackathonTips/          # Clases 11-12
 └── recursos/                    # Troubleshooting, Glosario
 ```
 
@@ -150,7 +150,7 @@ Al completar este curso, vas a poder:
 
 **⚡ Semana 3-4:** Desarrollar tokens, frontend React, integrar contratos
 
-**🏗️ Semana 5-6:** Arquitectura dApp, testing, security, presentar proyecto
+**🏗️ Semana 5-6:** Arquitectura dApp, testing, security, tips productos
 
 ---
 
