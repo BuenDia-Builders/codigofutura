@@ -9,6 +9,7 @@
 - **⏱️ Duración:** 90 minutos
 - **👥 Nivel:** Intermedio
 - **🔗 Proyecto:** Buen Día Builders
+- ** 📍 Token funcionando:** [Token BdB ejemplo](https://github.com/mariaelisaaraya/token-bdb?tab=readme-ov-file)
 
 ## 📖 Estructura de la Clase
 
