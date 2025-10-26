@@ -987,7 +987,7 @@ Ejemplo: XLM → EURC → USDC
 
 #### Conexión con tu dApp
 
-En tu dApp de la Clase 7:
+En tu futura dApp de la Clase 8:
 - ✅ Trabajas con USDC (asset con ALTA liquidez en Stellar)
 - ✅ Usas trustlines (necesarias para acceder a esa liquidez)
 - ✅ Si implementas PathPayment (Sección 5), aprovecharás liquidez del DEX
@@ -1627,7 +1627,7 @@ SÍ puede enviar asset existente
 
 Ahora que entiendes la teoría, es hora de HACER.
 
-En la siguiente sección vas a construir una dApp completa que:
+En la siguiente clase vas a construir una dApp pero ya te dejamos toda la información completa. En ella:
 - ✅ Se conecta a Freighter Wallet
 - ✅ Muestra balance de USDC
 - ✅ Crea trustlines
