@@ -344,7 +344,7 @@ pub fn transfer(
 
 #### 📚 Contenido
 
-**Teoría: ERC-20 en Stellar (15 min)**
+**Teoría: Token en Stellar (15 min)**
 - Qué es un token
 - Funciones estándar (mint, balance, transfer)
 - Diferencias con Ethereum
@@ -423,45 +423,17 @@ function TokenBalance({ address }) {
 - Mostrar balance e historial
 
 
-
 ---
 
-### 🟠 Sábado - Assets Nativos y DEX (60 min) ⚠️ OBLIGATORIO
+### 🟢 Sábado - Refuerzo: Scalffold + Token
 
-**Duración**: 60 min  
-**Asistencia**: OBLIGATORIA
+**Duración**: 60 min
 
 #### 📚 Contenido
-
-**Assets Nativos (25 min)**
-- Qué son assets (CAP-40)
-- Diferencia con tokens Soroban
-- Cuándo usar cada uno
-
-**Trustlines (20 min)**
-- Qué es una trustline
-- Por qué son necesarias
-- Authorization flags
-
-**Path Payments y DEX (10 min)**
-- Path payments
-- DEX integrado de Stellar
-- Demo visual en Laboratory
-
-**Práctica: Exploración (5 min)**
-- Explorar asset en Laboratory
-- Simular trustline (NO implementación completa)
-
-#### 🎯 Objetivos
-- Entender "dos sistemas de tokens"
-- Overview conceptual (no dominio técnico)
-- Contexto para arquitectura (Clase 9)
-
-#### 💡 Por Qué Aquí
-1. ✅ Después de dominar Token Soroban
-2. ✅ Después de ver Frontend básico
-3. ✅ Antes de arquitectura completa
-4. ✅ 60 min = suficiente para overview
+- Consolidar Token BdB
+- Práctica adicional
+- Última oportunidad para dudas de Scalffold
+- Preparación para Clase 7 (Token)
 
 ---
 
