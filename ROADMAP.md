@@ -437,7 +437,7 @@ function TokenBalance({ address }) {
 
 ---
 
-## 🔗 SEMANA 4: Integración y Soroban Avanzado
+## 🔗 SEMANA 4: Integración y Soroban
 
 ### 🔵 Martes - Clase 7: Token + Frontend Integrado
 
@@ -463,7 +463,7 @@ async function mintTokens(amount) {
 }
 ```
 
-**Estados y Eventos (25 min)**
+**Estados y Eventos**
 - Manejar estados de loading/success/error
 - Escuchar eventos del contrato
 - Actualizar UI
