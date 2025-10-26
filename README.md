@@ -109,39 +109,6 @@ stellar-course/
 
 ---
 
-## 🚀 Inicio Rápido
-
-### 1️⃣ Clona el Repositorio
-```bash
-git clone https://github.com/buendia-builders/codigofutura.git
-cd codigofutura
-```
-
-### 2️⃣ Empieza por la Clase 0
-```bash
-cd clase-0-bienvenida
-# Sigue el README.md
-```
-
-### 3️⃣ Instala Herramientas (Semana 0)
-- **Navegador**: Chrome, Firefox, Brave
-- **Wallet**: [Freighter](https://www.freighter.app/)
-- **Editor**: [VS Code](https://code.visualstudio.com/)
-
-### 4️⃣ Para Soroban (Semana 2+)
-```bash
-# Instalar Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Instalar Stellar CLI
-cargo install --locked stellar-cli --features opt
-
-# Verificar
-stellar --version
-```
-
----
-
 ## 🎯 Objetivos de Aprendizaje
 
 Al completar este curso, vas a poder:
@@ -191,19 +158,6 @@ Al completar:
 ---
 
 ## ❓ FAQ
-
-**¿Necesito experiencia previa?**
-No es necesario. Muchas Tiburonas empezaron desde cero, si recomendamos una base de web2, lógica y GitHub
-
-**¿Cuánto tiempo toma?**
-7 semanas + 1 pregrabada. ~60-80 horas totales.
-
-**¿Es gratis?**
-Sí, 100% gratuito gracias a SDF y BAF.
-
-**¿Qué hago si me atasco?**
-1. Revisa troubleshooting, 
-2. Pregunta en Telegram, 
 
 **Ver [FAQ Completo](./FAQ.md)**
 
@@ -269,10 +223,6 @@ Eres libre de usar, compartir, modificar y construir sobre este material.
 **#TiburonaBuilders** • **#StellarDevelopment** • **#Web3enEspañol**
 
 ---
-
-*Si la blockchain es el futuro del dinero,*
-*y el dinero mueve el mundo,*
-*entonces las Tiburonas construyen el futuro.*
 
 **🦈⚡ Vamos a construir⚡🦈**
 
