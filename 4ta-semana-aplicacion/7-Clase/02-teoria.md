@@ -189,26 +189,6 @@ Con EURC:
 - Sin conversión de moneda
 - Mismos beneficios de Stellar
 
-**Caso de uso real:**
-
-**Ripio (España + Latinoamérica)**
-- Fintech con licencia en España
-- Permite:
-  - Españoles envían EURC a familia en Latam
-  - Conversión automática a moneda local
-  - Fees mínimos vs bancos tradicionales
-
-**Números:**
-- Lanzado: Septiembre 2023
-- Crecimiento: Rápido en remesas Europa-Latam
-- Use case: Cross-border payments, tesorería
-
-**Código del Asset:**
-```
-Asset Code: EURC
-Issuer: GDHU6WRG4IEQXM5NZ4BMPKOXHW76MZM4Y2IEMFDVXBSDP6SJY4ITNPP2
-```
-
 ---
 
 ### CASO 3: BeansApp - Holanda (Global Impact) 🇳🇱
