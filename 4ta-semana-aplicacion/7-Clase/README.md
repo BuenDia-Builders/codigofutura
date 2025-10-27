@@ -67,7 +67,7 @@ Aquí construyes la dApp paso a paso. Incluye:
 
 ---
 
-### 📖 [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](./clase7-4-guias.md)
+### 📖 [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](clase7-4-guias.md)
 **⏱️ Tiempo: Referencia cuando lo necesites**
 
 Tu guía de rescate. Incluye:
@@ -93,7 +93,7 @@ Tu guía de rescate. Incluye:
 
 ---
 
-### 🔥 [SECCIÓN 5: MEJORAS AVANZADAS (OPCIONAL)](./clase7-5-mejoras-avanzadas.md)
+### 🔥 [SECCIÓN 5: MEJORAS AVANZADAS (OPCIONAL)](clase7-5-mejoras-avanzadas.md)
 **⏱️ Tiempo: 1-2 horas (según mejoras elegidas)**
 
 **¡NUEVO!** Para tiburonas que quieren llevar su dApp al siguiente nivel.
@@ -367,16 +367,16 @@ Pregunta si algo no está claro
 ## 🔗 NAVEGACIÓN RÁPIDA
 
 ### Empieza aquí:
-👉 [📋 SECCIÓN 1: RESUMEN Y BIENVENIDA](./clase7-1-resumen.md)
+👉 [📋 SECCIÓN 1: RESUMEN Y BIENVENIDA](clase7-1-resumen.md)
 
 ### Para entender conceptos:
-👉 [📖 SECCIÓN 2: TEORÍA CONCEPTUAL](./clase7-2-teoria.md)
+👉 [📖 SECCIÓN 2: TEORÍA CONCEPTUAL](clase7-2-teoria.md)
 
 ### Para construir la dApp:
-👉 [💻 SECCIÓN 3: CÓDIGO COMPLETO](./clase7-3-codigo.md)
+👉 [💻 SECCIÓN 3: CÓDIGO COMPLETO](clase7-3-codigo.md)
 
 ### Para resolver problemas:
-👉 [📖 SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](./clase7-4-guias.md)
+👉 [📖 SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](clase7-4-guias.md)
 
 ---
 
