@@ -146,13 +146,10 @@ Circle lanzó USDC en:
 **Casos de uso:**
 
 **A) MoneyGram: Cash-to-Crypto**
-- **200,000+ locaciones** globales
 - Proceso:
-  1. Usuario deposita cash en MoneyGram
-  2. Recibe USDC en su wallet de Stellar
-  3. Puede usarlo para pagos o enviarlo a cualquier parte
-  4. Lo convierte de vuelta a cash cuando quiera
-- **Sin cuenta bancaria necesaria**
+  1. Conectando On y Off-Ramps a Billeteras y Aplicaciones Potenciadas por Stellar
+  2. Solucionando el Problema de la Última Milla sin una Cuenta Bancaria
+  3. USDC en la red de Stellar para Liquidación Rápida y Fácil
 
 **B) Fonbnk: Airtime-to-Crypto (África)**
 - Convierte **saldo de celular** en USDC
