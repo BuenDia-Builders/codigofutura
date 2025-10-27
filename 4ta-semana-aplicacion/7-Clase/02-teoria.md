@@ -757,15 +757,7 @@ Caso: Cuenta comprometida
 - ✅ AUTH_REQUIRED: Sí (compliance)
 - ✅ AUTH_REVOCABLE: Sí (seguridad)
 - ✅ AUTH_CLAWBACK: Sí (errores y legal)
-
-**Para tokens comunitarios (puntos de lealtad):**
-- ❌ AUTH_REQUIRED: No (queremos que todos puedan usar)
-- ⚠️ AUTH_REVOCABLE: Tal vez (si hay abuso)
-- ❌ AUTH_CLAWBACK: No (descentralización)
-
-**Para tu asset en testnet:**
-- ❌ Todos apagados (para facilitar testing)
-
+- 
 ---
 
 ### Proceso de Crear una Trustline
