@@ -1609,9 +1609,9 @@ Eso es ser una Tiburona Builder. 🦈⚡
 
 ---
 
-**Siguiente:** [💻 SECCIÓN 3: CÓDIGO COMPLETO →](./clase7-3-codigo.md)
+**Siguiente:** [💻 SECCIÓN 3: CÓDIGO COMPLETO →](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/03-codigo.md)
 
-**Anterior:** [← 📋 SECCIÓN 1: RESUMEN](./clase7-1-resumen.md)
+**Anterior:** [← 📋 SECCIÓN 1: RESUMEN](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/01-resumen.md)
 
 ---
 
