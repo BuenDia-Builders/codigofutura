@@ -146,13 +146,10 @@ Circle lanzó USDC en:
 **Casos de uso:**
 
 **A) MoneyGram: Cash-to-Crypto**
-- **200,000+ locaciones** globales
 - Proceso:
-  1. Usuario deposita cash en MoneyGram
-  2. Recibe USDC en su wallet de Stellar
-  3. Puede usarlo para pagos o enviarlo a cualquier parte
-  4. Lo convierte de vuelta a cash cuando quiera
-- **Sin cuenta bancaria necesaria**
+  1. Conectando On y Off-Ramps a Billeteras y Aplicaciones Potenciadas por Stellar
+  2. Solucionando el Problema de la Última Milla sin una Cuenta Bancaria
+  3. USDC en la red de Stellar para Liquidación Rápida y Fácil
 
 **B) Fonbnk: Airtime-to-Crypto (África)**
 - Convierte **saldo de celular** en USDC
@@ -188,26 +185,6 @@ Con EURC:
 - Euros nativos digitales
 - Sin conversión de moneda
 - Mismos beneficios de Stellar
-
-**Caso de uso real:**
-
-**Ripio (España + Latinoamérica)**
-- Fintech con licencia en España
-- Permite:
-  - Españoles envían EURC a familia en Latam
-  - Conversión automática a moneda local
-  - Fees mínimos vs bancos tradicionales
-
-**Números:**
-- Lanzado: Septiembre 2023
-- Crecimiento: Rápido en remesas Europa-Latam
-- Use case: Cross-border payments, tesorería
-
-**Código del Asset:**
-```
-Asset Code: EURC
-Issuer: GDHU6WRG4IEQXM5NZ4BMPKOXHW76MZM4Y2IEMFDVXBSDP6SJY4ITNPP2
-```
 
 ---
 
@@ -780,15 +757,7 @@ Caso: Cuenta comprometida
 - ✅ AUTH_REQUIRED: Sí (compliance)
 - ✅ AUTH_REVOCABLE: Sí (seguridad)
 - ✅ AUTH_CLAWBACK: Sí (errores y legal)
-
-**Para tokens comunitarios (puntos de lealtad):**
-- ❌ AUTH_REQUIRED: No (queremos que todos puedan usar)
-- ⚠️ AUTH_REVOCABLE: Tal vez (si hay abuso)
-- ❌ AUTH_CLAWBACK: No (descentralización)
-
-**Para tu asset en testnet:**
-- ❌ Todos apagados (para facilitar testing)
-
+- 
 ---
 
 ### Proceso de Crear una Trustline
@@ -1640,9 +1609,9 @@ Eso es ser una Tiburona Builder. 🦈⚡
 
 ---
 
-**Siguiente:** [💻 SECCIÓN 3: CÓDIGO COMPLETO →](./clase7-3-codigo.md)
+**Siguiente:** [💻 SECCIÓN 3: CÓDIGO COMPLETO →](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/03-codigo.md)
 
-**Anterior:** [← 📋 SECCIÓN 1: RESUMEN](./clase7-1-resumen.md)
+**Anterior:** [← 📋 SECCIÓN 1: RESUMEN](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/01-resumen.md)
 
 ---
 

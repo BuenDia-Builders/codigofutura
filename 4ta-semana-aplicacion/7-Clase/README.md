@@ -8,8 +8,7 @@ Esta es tu guía completa para dominar Assets Nativos en Stellar. Está dividida
 
 ## 📚 ESTRUCTURA DE LA CLASE
 
-### 📋 [SECCIÓN 1: RESUMEN Y BIENVENIDA](./clase7-1-resumen.md)
-**⏱️ Tiempo: 5 minutos**
+### 📋 [SECCIÓN 1: RESUMEN Y BIENVENIDA](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/01-resumen.md)
 
 Tu punto de partida. Aquí descubrirás:
 - 🎯 Qué vas a lograr hoy
@@ -21,8 +20,7 @@ Tu punto de partida. Aquí descubrirás:
 
 ---
 
-### 📖 [SECCIÓN 2: TEORÍA CONCEPTUAL](./clase7-2-teoria.md)
-**⏱️ Tiempo: 20-25 minutos**
+### 📖 [SECCIÓN 2: TEORÍA CONCEPTUAL](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/02-teoria.md)
 
 El fundamento que necesitas antes de construir. Incluye:
 - 📜 Historia: Por qué se crearon los Assets Nativos
@@ -42,8 +40,7 @@ El fundamento que necesitas antes de construir. Incluye:
 
 ---
 
-### 💻 [SECCIÓN 3: CÓDIGO COMPLETO](./clase7-3-codigo.md)
-**⏱️ Tiempo: 30-40 minutos**
+### 💻 [SECCIÓN 3: CÓDIGO COMPLETO](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/03-codigo.md)
 
 Aquí construyes la dApp paso a paso. Incluye:
 - ⚠️ **Aclaración crítica:** Por qué NO usas contratos Soroban
@@ -67,8 +64,7 @@ Aquí construyes la dApp paso a paso. Incluye:
 
 ---
 
-### 📖 [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](./clase7-4-guias.md)
-**⏱️ Tiempo: Referencia cuando lo necesites**
+### 📖 [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/04-guias.md)
 
 Tu guía de rescate. Incluye:
 - 📚 **Vocabulario completo** (A-Z)
@@ -93,7 +89,7 @@ Tu guía de rescate. Incluye:
 
 ---
 
-### 🔥 [SECCIÓN 5: MEJORAS AVANZADAS (OPCIONAL)](./clase7-5-mejoras-avanzadas.md)
+### 🔥 [SECCIÓN 5: MEJORAS AVANZADAS (OPCIONAL)](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/5-mejoras-avanzadas.md)
 **⏱️ Tiempo: 1-2 horas (según mejoras elegidas)**
 
 **¡NUEVO!** Para tiburonas que quieren llevar su dApp al siguiente nivel.
@@ -361,23 +357,6 @@ Pregunta si algo no está claro
 ✅ Creaste trustline → ¡Celebra!
 ✅ Desplegaste en Vercel → ¡CELEBRA!
 ```
-
----
-
-## 🔗 NAVEGACIÓN RÁPIDA
-
-### Empieza aquí:
-👉 [📋 SECCIÓN 1: RESUMEN Y BIENVENIDA](./clase7-1-resumen.md)
-
-### Para entender conceptos:
-👉 [📖 SECCIÓN 2: TEORÍA CONCEPTUAL](./clase7-2-teoria.md)
-
-### Para construir la dApp:
-👉 [💻 SECCIÓN 3: CÓDIGO COMPLETO](./clase7-3-codigo.md)
-
-### Para resolver problemas:
-👉 [📖 SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](./clase7-4-guias.md)
-
 ---
 
 ## 🆘 ¿NECESITAS AYUDA?
@@ -427,14 +406,6 @@ Eso es ser una **Tiburona Builder**. 🦈⚡
 
 ---
 
-## 🚀 ¿LISTA PARA EMPEZAR?
-
-No más charla. Es hora de construir.
-
-Empieza aquí: 👉 [📋 SECCIÓN 1: RESUMEN Y BIENVENIDA](./clase7-1-resumen.md)
-
----
-
 ## 📝 DESPUÉS DE LA CLASE
 
 Cosas que puedes hacer:
@@ -460,8 +431,6 @@ Cosas que puedes hacer:
 - [ ] Lanza en mainnet (con precaución)
 
 ---
-
-## 🌟 CRÉDITOS Y AGRADECIMIENTOS
 
 Esta clase se inspira en proyectos reales:
 
@@ -491,8 +460,6 @@ Cuando termines:
 El futuro de los pagos se construye hoy.
 
 Y tú eres parte de él.
-
-**Empieza aquí:** 👉 [📋 SECCIÓN 1: RESUMEN →](./clase7-1-resumen.md)
 
 ---
 

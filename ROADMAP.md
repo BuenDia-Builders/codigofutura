@@ -439,90 +439,54 @@ function TokenBalance({ address }) {
 
 ## 🔗 SEMANA 4: Integración y Soroban
 
-### 🔵 Martes - Clase 7: Token + Frontend Integrado
+### 🔵 Martes - Clase 7: Assets + Frontend Integrado
 
 **Duración**: 90 min
 
-#### 📚 Contenido
+### Entender
+- ✅ Qué son los Assets Nativos y por qué son poderosos
+- ✅ Por qué grandes empresas (Circle, MoneyGram) los usan
+- ✅ Cómo funcionan trustlines (tu seguridad)
+- ✅ Qué es el DEX y path payments (la magia)
+- ✅ Cuándo usar Assets Nativos vs Soroban
 
-**Invocar Contrato desde Frontend (35 min)**
-```jsx
-async function mintTokens(amount) {
-  const contract = new SorobanClient.Contract(contractId);
-  
-  const tx = await contract.mint({
-    to: userAddress,
-    amount: BigInt(amount)
-  });
-  
-  // Sign with Freighter
-  const signedTx = await freighter.signTransaction(tx);
-  
-  // Submit
-  const result = await server.sendTransaction(signedTx);
-}
-```
+### Construir
+- ✅ Una dApp completa con Next.js
+- ✅ 3 componentes funcionales (Wallet, Balance, Trustline)
+- ✅ Backend con Supabase
+- ✅ Deploy en Vercel (URL pública)
 
-**Estados y Eventos**
-- Manejar estados de loading/success/error
-- Escuchar eventos del contrato
-- Actualizar UI
+### Saber
+- ✅ Debuggear errores comunes
+- ✅ Usar Stellar Laboratory
+- ✅ Consultar Horizon API
+- ✅ Leer códigos de error
 
-**Botones Mint/Transfer (20 min)**
-```jsx
-<button onClick={() => mintTokens(1000)}>
-  Mint 1000 Tokens 🪙
-</button>
-
-<button onClick={() => transfer(recipientAddress, 100)}>
-  Transfer 100 Tokens →
-</button>
-```
-
-**Autenticación Básica (10 min)**
-- Verificar firma
-- Proteger funciones
-
-#### 🎯 Objetivos
-- Ciclo completo: Contrato → UI → dApp funcional
-- Botones interactivos que funcionan
-- Manejo de estados
-
+**Resultado final:** Un proyecto funcionando que puedes agregar a tu portfolio.
 
 ---
 
-### 🔵 Jueves - Clase 8: Soroban Avanzado
+### 🔵 Jueves - Clase 8: Ver el código de ASSETS con más profundidad
 
 **Duración**: 90 min
 
 #### 📚 Contenido
 
-**Events (30 min)**
-```rust
-env.events().publish((
-    symbol!("transfer"),
-    from,
-    to
-), amount);
-```
-- Emitir eventos
-- Escuchar eventos en frontend
-- Debugging con eventos
+### Tecnologías usadas:
 
-**Patrones de Autenticación (35 min)**
-- Multi-sig
-- Custom authorization
-- Address verification
+- ✅ **Next.js**: Framework de React
+- ✅ **Tailwind CSS**: Estilos
+- ✅ **Stellar SDK**: Interacción con blockchain
+- ✅ **Freighter API**: Wallet connection
+- ✅ **Supabase**: Base de datos
+- ✅ **Vercel**: Hosting
 
-**Optimización de Contratos (25 min)**
-- Gas optimization
-- Storage optimization
-- Best practices
+Tu código solo:
+1. Llama operaciones que ya existen (ChangeTrust)
+2. Firma transacciones con Freighter
+3. Consulta datos con Horizon API
 
-#### 🎯 Objetivos
-- Emitir y escuchar eventos
-- Implementar multi-sig básico
-- Optimizar contratos
+**Eso es todo. Simple. Poderoso.**
 
 ---
 

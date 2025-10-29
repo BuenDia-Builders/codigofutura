@@ -1,0 +1,23 @@
+# Rust's output directory
+target/
+# Carpeta de depuración
+debug/
+
+# Dependencias específicas de build
+.cargo/
+rust-toolchain.toml
+
+# Archivos de caché del compilador
+/Cargo.lock
+/Cargo.toml
+/rustc_info.json
+/rustc-cache
+
+# Soroban settings
+.soroban
+
+# Archivos temporales
+.vscode/
+
+# Archivos de instantáneas de pruebas
+**/*.snap

@@ -49,7 +49,7 @@ Al final de esta clase, vas a ser parte del **0.1% de personas** que realmente e
 
 Esta clase tiene 4 secciones. Si algo no queda claro en una, salta a la siguiente y vuelve después:
 
-### 📖 [SECCIÓN 2: TEORÍA CONCEPTUAL](./clase7-2-teoria.md)
+### 📖 [SECCIÓN 2: TEORÍA CONCEPTUAL](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/02-teoria.md)
 **Lo que necesitas saber antes de construir**
 
 Aquí vas a entender:
@@ -63,7 +63,7 @@ Aquí vas a entender:
 
 ---
 
-### 💻 [SECCIÓN 3: CÓDIGO COMPLETO](./clase7-3-codigo.md)
+### 💻 [SECCIÓN 3: CÓDIGO COMPLETO](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/03-codigo.md)
 **La dApp paso a paso**
 
 Aquí vas a construir:
@@ -80,7 +80,7 @@ Aquí vas a construir:
 
 ---
 
-### 📖 [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](./clase7-4-guias.md)
+### 📖 [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/04-guias.md)
 **Tu guía de rescate**
 
 Aquí está:
@@ -177,8 +177,6 @@ Asegúrate de tener esto listo:
 - [ ] **Cuenta de Vercel** (gratis)
 - [ ] **Ganas de romperla** 🔥
 
-**¿No tienes algo de la lista?** No te preocupes. La [SECCIÓN 3: CÓDIGO](./clase7-3-codigo.md) te guía paso a paso para conseguir todo.
-
 ---
 
 ## 🚀 ¿LISTA PARA EMPEZAR?
@@ -190,16 +188,6 @@ Hoy vas a construir algo que podría ser la base de tu próxima startup.
 Hoy vas a ser parte del futuro de las finanzas.
 
 **No solo vas a aprender sobre Assets Nativos — vas a USARLOS.**
-
----
-
-## 📍 PRÓXIMOS PASOS
-
-1. **Si aún no leíste la teoría:** → [SECCIÓN 2: TEORÍA CONCEPTUAL](./clase7-2-teoria.md)
-
-2. **Si ya entiendes los conceptos:** → [SECCIÓN 3: CÓDIGO COMPLETO](./clase7-3-codigo.md)
-
-3. **Si tienes dudas o errores:** → [SECCIÓN 4: VOCABULARIO Y TROUBLESHOOTING](./clase7-4-guias.md)
 
 ---
 
@@ -215,7 +203,7 @@ Ahora sí, ¡vamos a construir! 🦈⚡
 
 ---
 
-**Siguiente:** [📖 SECCIÓN 2: TEORÍA CONCEPTUAL →](./clase7-2-teoria.md)
+**Siguiente:** [📖 SECCIÓN 2: TEORÍA CONCEPTUAL →](https://github.com/BuenDia-Builders/codigofutura/blob/main/4ta-semana-aplicacion/7-Clase/02-teoria.md)
 
 ---
 
