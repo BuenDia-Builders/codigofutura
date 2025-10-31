@@ -344,7 +344,7 @@ pub fn transfer(
 
 #### 📚 Contenido
 
-**Teoría: Token en Stellar (15 min)**
+**Teoría: ERC-20 en Stellar (15 min)**
 - Qué es un token
 - Funciones estándar (mint, balance, transfer)
 - Diferencias con Ethereum
@@ -423,70 +423,134 @@ function TokenBalance({ address }) {
 - Mostrar balance e historial
 
 
----
-
-### 🟢 Sábado - Refuerzo: Scalffold + Token
-
-**Duración**: 60 min
-
-#### 📚 Contenido
-- Consolidar Token BdB
-- Práctica adicional
-- Última oportunidad para dudas de Scalffold
-- Preparación para Clase 7 (Token)
 
 ---
 
-## 🔗 SEMANA 4: Integración y Soroban
+### 🟠 Sábado - Assets Nativos y DEX (60 min) ⚠️ OBLIGATORIO
 
-### 🔵 Martes - Clase 7: Assets + Frontend Integrado
-
-**Duración**: 90 min
-
-### Entender
-- ✅ Qué son los Assets Nativos y por qué son poderosos
-- ✅ Por qué grandes empresas (Circle, MoneyGram) los usan
-- ✅ Cómo funcionan trustlines (tu seguridad)
-- ✅ Qué es el DEX y path payments (la magia)
-- ✅ Cuándo usar Assets Nativos vs Soroban
-
-### Construir
-- ✅ Una dApp completa con Next.js
-- ✅ 3 componentes funcionales (Wallet, Balance, Trustline)
-- ✅ Backend con Supabase
-- ✅ Deploy en Vercel (URL pública)
-
-### Saber
-- ✅ Debuggear errores comunes
-- ✅ Usar Stellar Laboratory
-- ✅ Consultar Horizon API
-- ✅ Leer códigos de error
-
-**Resultado final:** Un proyecto funcionando que puedes agregar a tu portfolio.
-
----
-
-### 🔵 Jueves - Clase 8: Ver el código de ASSETS con más profundidad
-
-**Duración**: 90 min
+**Duración**: 60 min  
+**Asistencia**: OBLIGATORIA
 
 #### 📚 Contenido
 
-### Tecnologías usadas:
+**Assets Nativos (25 min)**
+- Qué son assets (CAP-40)
+- Diferencia con tokens Soroban
+- Cuándo usar cada uno
 
-- ✅ **Next.js**: Framework de React
-- ✅ **Tailwind CSS**: Estilos
-- ✅ **Stellar SDK**: Interacción con blockchain
-- ✅ **Freighter API**: Wallet connection
-- ✅ **Supabase**: Base de datos
-- ✅ **Vercel**: Hosting
+**Trustlines (20 min)**
+- Qué es una trustline
+- Por qué son necesarias
+- Authorization flags
 
-Tu código solo:
-1. Llama operaciones que ya existen (ChangeTrust)
-2. Firma transacciones con Freighter
-3. Consulta datos con Horizon API
+**Path Payments y DEX (10 min)**
+- Path payments
+- DEX integrado de Stellar
+- Demo visual en Laboratory
 
-**Eso es todo. Simple. Poderoso.**
+**Práctica: Exploración (5 min)**
+- Explorar asset en Laboratory
+- Simular trustline (NO implementación completa)
+
+#### 🎯 Objetivos
+- Entender "dos sistemas de tokens"
+- Overview conceptual (no dominio técnico)
+- Contexto para arquitectura (Clase 9)
+
+#### 💡 Por Qué Aquí
+1. ✅ Después de dominar Token Soroban
+2. ✅ Después de ver Frontend básico
+3. ✅ Antes de arquitectura completa
+4. ✅ 60 min = suficiente para overview
+
+---
+
+## 🔗 SEMANA 4: Integración y Soroban Avanzado
+
+### 🔵 Martes - Clase 7: Token + Frontend Integrado
+
+**Duración**: 90 min
+
+#### 📚 Contenido
+
+**Invocar Contrato desde Frontend (35 min)**
+```jsx
+async function mintTokens(amount) {
+  const contract = new SorobanClient.Contract(contractId);
+  
+  const tx = await contract.mint({
+    to: userAddress,
+    amount: BigInt(amount)
+  });
+  
+  // Sign with Freighter
+  const signedTx = await freighter.signTransaction(tx);
+  
+  // Submit
+  const result = await server.sendTransaction(signedTx);
+}
+```
+
+**Estados y Eventos (25 min)**
+- Manejar estados de loading/success/error
+- Escuchar eventos del contrato
+- Actualizar UI
+
+**Botones Mint/Transfer (20 min)**
+```jsx
+<button onClick={() => mintTokens(1000)}>
+  Mint 1000 Tokens 🪙
+</button>
+
+<button onClick={() => transfer(recipientAddress, 100)}>
+  Transfer 100 Tokens →
+</button>
+```
+
+**Autenticación Básica (10 min)**
+- Verificar firma
+- Proteger funciones
+
+#### 🎯 Objetivos
+- Ciclo completo: Contrato → UI → dApp funcional
+- Botones interactivos que funcionan
+- Manejo de estados
+
+
+---
+
+### 🔵 Jueves - Clase 8: Soroban Avanzado
+
+**Duración**: 90 min
+
+#### 📚 Contenido
+
+**Events (30 min)**
+```rust
+env.events().publish((
+    symbol!("transfer"),
+    from,
+    to
+), amount);
+```
+- Emitir eventos
+- Escuchar eventos en frontend
+- Debugging con eventos
+
+**Patrones de Autenticación (35 min)**
+- Multi-sig
+- Custom authorization
+- Address verification
+
+**Optimización de Contratos (25 min)**
+- Gas optimization
+- Storage optimization
+- Best practices
+
+#### 🎯 Objetivos
+- Emitir y escuchar eventos
+- Implementar multi-sig básico
+- Optimizar contratos
 
 ---
 

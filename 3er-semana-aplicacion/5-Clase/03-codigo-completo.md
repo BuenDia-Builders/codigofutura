@@ -909,9 +909,288 @@ env.storage().persistent().set(&DataKey::Allowance(from, spender), &new_allowanc
 
 ## Guía de Compilación para Windows
 
-Ir a leer el siguiente documento 
+### Requisitos Previos
 
-https://github.com/BuenDia-Builders/codigofutura/blob/main/3er-semana-aplicacion/5-Clase/06-deployment.md
+```powershell
+# Verificar instalaciones
+rustc --version        # Debe ser 1.74.0+
+cargo --version        # Debe ser 1.74.0+
+stellar --version      # Debe ser 21.0.0+
+```
+
+### Paso 1: Configurar Target WASM
+
+```powershell
+# Agregar target wasm32 si no lo tienes
+rustup target add wasm32-unknown-unknown
+```
+
+### Paso 2: Compilar el Contrato
+
+```powershell
+# En la carpeta token_bdb/
+cargo build --target wasm32-unknown-unknown --release
+```
+
+**✅ Salida esperada:**
+```
+   Compiling soroban-sdk v23.0.2
+   Compiling token_bdb v0.1.0
+    Finished release [optimized] target(s) in 45.32s
+```
+
+**❌ Si ves error sobre `Symbol.to_string()`:**
+- Significa que quedó algún uso incorrecto de `Symbol`
+- Verifica que todos los metadatos usen `String`
+- Verifica que los eventos usen `symbol_short!()`
+
+### Paso 3: Optimizar WASM (Opcional)
+
+```powershell
+# Instalar wasm-opt (si no lo tienes)
+cargo install wasm-opt
+
+# Optimizar el WASM
+wasm-opt -Oz `
+  target\wasm32-unknown-unknown\release\token_bdb.wasm `
+  -o target\wasm32-unknown-unknown\release\token_bdb_optimized.wasm
+```
+
+### Paso 4: Build con Stellar CLI
+
+```powershell
+# Alternativa: usar Stellar CLI directamente
+stellar contract build
+```
+
+Esto genera: `target/wasm32-unknown-unknown/release/token_bdb.wasm`
+
+---
+
+## 🧪 Testing Rápido
+
+### Test de Compilación
+
+```powershell
+# Verificar que compila sin warnings
+cargo build --target wasm32-unknown-unknown --release 2>&1 | Select-String "warning"
+```
+
+Si no hay output, ¡excelente! No hay warnings.
+
+### Test Unitario (cuando agregues test.rs)
+
+```powershell
+# Correr todos los tests
+cargo test
+
+# Correr test específico
+cargo test test_initialize
+
+# Ver output detallado
+cargo test -- --nocapture
+```
+
+---
+
+## 📦 Deploy a Testnet
+
+### Paso 1: Configurar Cuenta
+
+```powershell
+# Generar nueva identidad
+stellar keys generate --name alice --network testnet
+
+# O importar clave existente
+stellar keys add alice --secret-key SXXX...
+```
+
+### Paso 2: Fondear Cuenta
+
+```powershell
+# Obtener XLM gratis de Friendbot
+$publicKey = stellar keys address alice
+curl "https://friendbot.stellar.org?addr=$publicKey"
+```
+
+### Paso 3: Deploy del Contrato
+
+```powershell
+# Deploy
+stellar contract deploy `
+  --wasm target\wasm32-unknown-unknown\release\token_bdb.wasm `
+  --source alice `
+  --network testnet
+
+# Guardar el CONTRACT_ID que devuelve
+```
+
+### Paso 4: Inicializar el Token
+
+```powershell
+# Inicializar con metadatos
+stellar contract invoke `
+  --id <CONTRACT_ID> `
+  --source alice `
+  --network testnet `
+  -- initialize `
+  --admin <ALICE_ADDRESS> `
+  --name "Buen Dia Builders Token" `
+  --symbol "BDB" `
+  --decimals 7
+```
+
+### Paso 5: Mintear Tokens
+
+```powershell
+# Mintear 1,000,000 tokens (con 7 decimales = 1,000,000.0000000)
+stellar contract invoke `
+  --id <CONTRACT_ID> `
+  --source alice `
+  --network testnet `
+  -- mint `
+  --to <ALICE_ADDRESS> `
+  --amount 10000000000000
+```
+
+### Paso 6: Verificar Balance
+
+```powershell
+# Consultar balance
+stellar contract invoke `
+  --id <CONTRACT_ID> `
+  --source alice `
+  --network testnet `
+  -- balance `
+  --account <ALICE_ADDRESS>
+```
+
+---
+
+## 🐛 Troubleshooting Común
+
+### Error: "no field `to_string` on type `Symbol`"
+
+**Causa:** Usando `Symbol` donde debe ser `String`
+
+**Solución:**
+```rust
+// ❌ Incorrecto
+pub symbol: Symbol
+
+// ✅ Correcto
+pub symbol: String
+```
+
+### Error: "method `len` not found in `Symbol`"
+
+**Causa:** Intentando validar longitud de `Symbol`
+
+**Solución:**
+```rust
+// ❌ Incorrecto
+if symbol.len() > 32 { ... }
+
+// ✅ Correcto - usar String
+if symbol.len() > 32 { ... }
+```
+
+### Error: Datos expiran en Testnet
+
+**Causa:** TTL no extendido correctamente
+
+**Solución:**
+```rust
+// Siempre después de .set()
+env.storage().persistent().extend_ttl(&key, 100_000, 200_000);
+```
+
+### Error: InsufficientBalance en mint
+
+**Causa:** Usando tipos incorrectos (u128 vs i128)
+
+**Solución:**
+```rust
+// ✅ CAP-46 usa i128 para amounts
+fn mint(env: Env, to: Address, amount: i128)
+```
+
+---
+
+## 📊 Comparación con Versión Anterior
+
+| Aspecto | Versión Original | Versión Mejorada |
+|---------|-----------------|------------------|
+| **Tipo de metadatos** | Symbol (limitado) | String (flexible) |
+| **Validación de init** | Solo en funciones mutables | También en getters |
+| **Evento transfer_from** | ❌ Faltante | ✅ Implementado |
+| **Validación metadata** | ❌ No validaba | ✅ Valida longitud |
+| **Optimización storage** | No eliminaba keys = 0 | Elimina keys innecesarias |
+| **Documentación** | Mínima | Exhaustiva con ejemplos |
+| **Compilación** | ⚠️ Errores posibles | ✅ Sin warnings |
+
+---
+
+## 🎯 Checklist de Calidad
+
+Antes de deployar a mainnet, verifica:
+
+- [ ] ✅ Compila sin warnings: `cargo build --release`
+- [ ] ✅ Todos los tests pasan: `cargo test`
+- [ ] ✅ Deployado en testnet y testeado manualmente
+- [ ] ✅ Eventos emitidos correctamente (verificar en explorer)
+- [ ] ✅ TTL configurado apropiadamente
+- [ ] ✅ Metadatos validados (name, symbol no vacíos)
+- [ ] ✅ Overflow protection en todas las operaciones
+- [ ] ✅ Authorization verificada en funciones críticas
+- [ ] ✅ Documentación actualizada en README
+- [ ] ✅ Código revisado por al menos una persona más
+
+---
+
+## 🔗 Recursos Adicionales
+
+- [CAP-46 Official Spec](https://stellar.org/protocol/cap-46)
+- [Soroban String Documentation](https://docs.rs/soroban-sdk/23.0.2/soroban_sdk/struct.String.html)
+- [Soroban Symbol Documentation](https://docs.rs/soroban-sdk/23.0.2/soroban_sdk/struct.Symbol.html)
+- [Storage & TTL Best Practices](https://developers.stellar.org/docs/learn/smart-contract-internals/state-archival)
+- [Token Example - Stellar](https://github.com/stellar/soroban-examples/tree/main/token)
+
+---
+
+## 💡 Tips Finales
+
+### Para Development
+
+```powershell
+# Build rápido (sin optimizaciones)
+cargo build --target wasm32-unknown-unknown
+
+# Build con logs para debugging
+cargo build --profile release-with-logs
+```
+
+### Para Production
+
+```powershell
+# Build optimizado completo
+cargo build --target wasm32-unknown-unknown --release
+wasm-opt -Oz target\wasm32-unknown-unknown\release\token_bdb.wasm -o token_bdb_prod.wasm
+
+# Verificar tamaño
+ls -lh token_bdb_prod.wasm
+```
+
+### Para Testing
+
+```powershell
+# Correr tests en watch mode (requiere cargo-watch)
+cargo watch -x test
+
+# Correr tests con coverage
+cargo tarpaulin --out Html
+```
+
 ---
 
 ## 🦈 Mensaje de las Tiburonas Senior
