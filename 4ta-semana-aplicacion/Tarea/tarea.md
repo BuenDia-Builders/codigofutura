@@ -128,7 +128,7 @@ const copyToClipboard = () => {
 
 Al terminar, debes tener:
 
-1. ✅ Proyecto Next.js funcionando en Chamverse con nombre y apellido por favor. 
+1. ✅ Proyecto Next.js funcionando entregado Chamverse en envios, titulo SEMANA 4 - nombre y apellido. 
 2. ✅ Componente `WalletConnect.jsx` creado
 3. ✅ Capacidad de conectar/desconectar Freighter
 4. ✅ Manejo de errores implementado
