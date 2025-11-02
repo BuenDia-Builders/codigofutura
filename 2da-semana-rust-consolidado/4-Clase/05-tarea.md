@@ -3,6 +3,22 @@
 
 ---
 
+## ⚠️ **UPDATE 19 de Octubre 2025** ⚠️
+
+**CORRECCIÓN IMPORTANTE:** La versión original de esta tarea contenía un error en el Paso 4.2 que impedía la compilación. El tipo `Symbol` en soroban-sdk NO tiene método `.to_string()` ni `.len()`.
+
+**SOLUCIÓN:** Usar `String` en lugar de `Symbol` para el parámetro `nombre` cuando necesitamos validar su longitud.
+
+**Cambios aplicados:**
+- ✅ Paso 2.2: Agregado `String` a los imports
+- ✅ Paso 4.1: Cambiado tipo del parámetro `nombre` de `Symbol` a `String`
+- ✅ Paso 4.2-4.3: Simplificadas validaciones (String ya tiene `.len()`)
+- ✅ Paso 7.3-7.6: Actualizados tests para usar `String::from_str()`
+
+**Créditos:** Bug reportado y solucionado por Tiburona Karen 🦈⚡
+
+---
+
 ## 🎯 Objetivo de esta tarea
 
 **En clase viste** cómo se construye un contrato profesional.  
@@ -10,12 +26,12 @@
 
 Al completar esta tarea, habrás:
 
-- ✅ Implementado tu primer contrato con manejo de errores
-- ✅ Usado storage organizado con DataKey
-- ✅ Aplicado validaciones profesionales
-- ✅ Gestionado TTL correctamente
-- ✅ Creado un sistema de control de acceso
-- ✅ Escrito tests para verificar que funciona
+-  Implementado tu primer contrato con manejo de errores
+-  Usado storage organizado con DataKey
+-  Aplicado validaciones profesionales
+-  Gestionado TTL correctamente
+-  Creado un sistema de control de acceso
+-  Escrito tests para verificar que funciona
 
 **Tiempo estimado:** 2-3 horas  
 **Dificultad:** Media  
@@ -25,15 +41,15 @@ Al completar esta tarea, habrás:
 
 ## 📋 Antes de empezar
 
-### ✅ Checklist de preparación:
+###  Checklist de preparación:
 
 - [ ] Tienes Rust y Soroban CLI instalados
 - [ ] Revisaste los 4 documentos de la clase
 - [ ] Tienes los archivos de referencia a mano
 - [ ] Terminal abierta en tu carpeta de proyectos
-- [ ] Mente fresca y lista para construir 💪
+- [ ] Mente fresca y lista para construir 
 
-### 🎒 Lo que necesitas tener cerca:
+###  Lo que necesitas tener cerca:
 
 1. **04-hello-tiburona.md** → El código completo de referencia
 2. **02-result-option.md** → Para recordar manejo de errores
@@ -56,7 +72,7 @@ cd hello-tiburona
 
 **Resultado esperado:**
 ```
-✅ Created `hello-tiburona` project
+Created `hello-tiburona` project
 ```
 
 ### Paso 1.2: Verificar estructura
@@ -93,7 +109,7 @@ Navega a: `contracts/hello-tiburona/src/lib.rs`
 
 Verás el código template. **Vamos a reemplazarlo completamente.**
 
-### Paso 2.2: Imports y setup inicial
+### Paso 2.2: Imports y setup inicial 🔪CORREGIDO 
 
 **Borra todo el contenido** y empieza con:
 
@@ -101,7 +117,7 @@ Verás el código template. **Vamos a reemplazarlo completamente.**
 #![no_std]
 use soroban_sdk::{
     contract, contractimpl, contracterror, contracttype,
-    Env, Symbol, Address
+    Env, Symbol, Address, String  // ⭐ String agregado
 };
 ```
 
@@ -109,6 +125,7 @@ use soroban_sdk::{
 - `contracterror` → Para definir errores
 - `contracttype` → Para DataKey
 - `Address` → Para control de acceso
+- `String` → ⭐ Para validar inputs de texto
 
 ### Paso 2.3: Definir errores
 
@@ -126,7 +143,7 @@ pub enum Error {
 }
 ```
 
-**🤔 Reflexiona:**
+**Reflexiona:**
 - ¿Por qué cada error tiene un número?
 - ¿Qué error usarías si alguien intenta resetear el contador sin ser admin?
 
@@ -144,7 +161,7 @@ pub enum DataKey {
 }
 ```
 
-**🤔 Reflexiona:**
+**Reflexiona:**
 - ¿Por qué `Admin` no tiene parámetros pero `UltimoSaludo` sí?
 - ¿Qué storage usarás para cada key?
 
@@ -163,7 +180,7 @@ impl HelloContract {
 ```
 
 **Checkpoint 2:**
-- [ ] Imports correctos
+- [ ] Imports correctos (incluyendo String)
 - [ ] 4 errores definidos
 - [ ] 3 keys en DataKey
 - [ ] Estructura del contrato creada
@@ -183,7 +200,7 @@ Dentro del bloque `impl HelloContract`, agrega:
     }
 ```
 
-**🤔 Piensa antes de continuar:**
+**Pensa antes de continuar:**
 - ¿Por qué retorna `Result<(), Error>` y no solo `()`?
 - ¿Qué podría salir mal en una inicialización?
 
@@ -197,7 +214,7 @@ Dentro de `initialize()`:
         }
 ```
 
-**💡 Pregunta clave:** ¿Por qué usamos `has()` en lugar de `get()`?
+**Pregunta clave:** ¿Por qué usamos `has()` en lugar de `get()`?
 
 **Respuesta:** `has()` es más barato, solo verifica existencia sin deserializar.
 
@@ -211,7 +228,7 @@ Agrega después de la verificación:
             .set(&DataKey::Admin, &admin);
 ```
 
-**🤔 Decisión:** ¿Por qué instance storage para Admin?
+**Decisión:** ¿Por qué instance storage para Admin?
 
 ### Paso 3.4: Inicializar contador
 
@@ -221,7 +238,7 @@ Agrega después de la verificación:
             .set(&DataKey::ContadorSaludos, &0u32);
 ```
 
-**💡 Nota:** `&0u32` = referencia a unsigned 32-bit integer con valor 0
+**Nota:** `&0u32` = referencia a unsigned 32-bit integer con valor 0
 
 ### Paso 3.5: Extender TTL
 
@@ -233,7 +250,7 @@ Agrega después de la verificación:
         Ok(())
 ```
 
-**🤔 Reflexiona:** ¿Qué significan los dos 100?
+**Reflexiona:** ¿Qué significan los dos 100?
 
 ### Paso 3.6: Compilar y verificar
 
@@ -256,9 +273,9 @@ cargo build --target wasm32-unknown-unknown --release
 
 ---
 
-## 💬 Fase 4: Implementar hello()
+## Fase 4: Implementar hello()
 
-### Paso 4.1: Firma de la función
+### Paso 4.1: Firma de la función 🔪  CORREGIDO
 
 Después de `initialize()`, agrega:
 
@@ -266,36 +283,38 @@ Después de `initialize()`, agrega:
     pub fn hello(
         env: Env,
         usuario: Address,
-        nombre: Symbol
+        nombre: String  // ⭐ String en lugar de Symbol
     ) -> Result<Symbol, Error> {
         // Implementación aquí
     }
 ```
 
-**🤔 Pregunta:** ¿Por qué retorna `Result<Symbol, Error>` en lugar de solo `Symbol`?
+**Pregunta:** ¿Por qué retorna `Result<Symbol, Error>` en lugar de solo `Symbol`?
 
-### Paso 4.2: Validación - Nombre no vacío
+**Nota importante:** Usamos `String` para el parámetro porque necesitamos validar su longitud. `Symbol` NO tiene métodos `.len()` ni `.to_string()`.
+
+### Paso 4.2: Validación - Nombre no vacío 🔪 CORREGIDO
 
 Dentro de `hello()`:
 
 ```rust
-        let nombre_str = nombre.to_string();
-        if nombre_str.len() == 0 {
+        // ⭐ String ya tiene .len(), no necesitamos .to_string()
+        if nombre.len() == 0 {
             return Err(Error::NombreVacio);
         }
 ```
 
-**💡 Early return:** Si el nombre está vacío, salimos inmediatamente.
+**Early return:** Si el nombre está vacío, salimos inmediatamente.
 
-### Paso 4.3: Validación - Nombre no muy largo
+### Paso 4.3: Validación - Nombre no muy largo 🔪 CORREGIDO
 
 ```rust
-        if nombre_str.len() > 32 {
+        if nombre.len() > 32 {
             return Err(Error::NombreMuyLargo);
         }
 ```
 
-**🤔 Pregunta:** ¿Por qué validar la longitud antes de tocar storage?
+**Pregunta:** ¿Por qué validar la longitud antes de tocar storage?
 
 ### Paso 4.4: Incrementar contador
 
@@ -311,7 +330,7 @@ Dentro de `hello()`:
             .set(&key_contador, &(contador + 1));
 ```
 
-**💡 Patrón:** Lee → Modifica → Guarda
+**Patrón:** Lee → Modifica → Guarda
 
 ### Paso 4.5: Guardar último saludo
 
@@ -321,7 +340,7 @@ Dentro de `hello()`:
             .set(&DataKey::UltimoSaludo(usuario.clone()), &nombre);
 ```
 
-**🤔 Decisión:** ¿Por qué persistent storage aquí?
+**Decisión:** ¿Por qué persistent storage aquí?
 
 **Respuesta:** Es dato específico de usuario (crítico).
 
@@ -337,7 +356,7 @@ Dentro de `hello()`:
             .extend_ttl(100, 100);
 ```
 
-**💡 Orden:** Persistent primero, instance después.
+**Orden:** Persistent primero, instance después.
 
 ### Paso 4.7: Retornar saludo
 
@@ -361,7 +380,7 @@ cargo build --target wasm32-unknown-unknown --release
 
 ---
 
-## 📊 Fase 5: Implementar funciones de consulta
+##  Fase 5: Implementar funciones de consulta
 
 ### Paso 5.1: get_contador()
 
@@ -376,23 +395,25 @@ Después de `hello()`:
     }
 ```
 
-**🤔 Pregunta:** ¿Por qué no retorna `Result`?
+**Pregunta:** ¿Por qué no retorna `Result`?
 
 **Respuesta:** Esta función nunca falla. `unwrap_or(0)` maneja el caso de no existencia.
 
-### Paso 5.2: get_ultimo_saludo()
+### Paso 5.2: get_ultimo_saludo() ⭐ NOTA
 
 ```rust
-    pub fn get_ultimo_saludo(env: Env, usuario: Address) -> Option<Symbol> {
+    pub fn get_ultimo_saludo(env: Env, usuario: Address) -> Option<String> {
         env.storage()
             .persistent()
             .get(&DataKey::UltimoSaludo(usuario))
     }
 ```
 
-**🤔 Pregunta:** ¿Por qué `Option<Symbol>` y no `Symbol`?
+**Pregunta:** ¿Por qué `Option<String>` y no `String`?
 
 **Respuesta:** Porque puede no existir (Tiburona nunca saludó).
+
+**Nota:** Cambiamos a `Option<String>` porque ahora guardamos `String` en storage.
 
 ### Paso 5.3: Compilar
 
@@ -408,7 +429,7 @@ cargo build --target wasm32-unknown-unknown --release
 
 ---
 
-## 🔒 Fase 6: Implementar función administrativa
+## Fase 6: Implementar función administrativa
 
 ### Paso 6.1: reset_contador() - Estructura
 
@@ -429,7 +450,7 @@ Dentro de `reset_contador()`:
             .ok_or(Error::NoInicializado)?;
 ```
 
-**💡 Magia del `?`:** Si `get()` retorna `None`, se convierte en `Err(NoInicializado)` y la función retorna inmediatamente.
+**Magia del `?`:** Si `get()` retorna `None`, se convierte en `Err(NoInicializado)` y la función retorna inmediatamente.
 
 ### Paso 6.3: Verificar permisos
 
@@ -439,7 +460,7 @@ Dentro de `reset_contador()`:
         }
 ```
 
-**🔒 Seguridad:** Solo el admin puede resetear.
+**Seguridad:** Solo el admin puede resetear.
 
 ### Paso 6.4: Resetear contador
 
@@ -513,7 +534,7 @@ Agrega dentro del módulo `test`:
     }
 ```
 
-### Paso 7.3: Test - Hello con validaciones
+### Paso 7.3: Test - Hello con validaciones 🔪 CORREGIDO
 
 ```rust
     #[test]
@@ -527,7 +548,8 @@ Agrega dentro del módulo `test`:
         
         client.initialize(&admin);
         
-        let nombre = Symbol::new(&env, "Ana");
+        // ⭐ Usar String::from_str en lugar de Symbol::new
+        let nombre = String::from_str(&env, "Ana");
         let resultado = client.hello(&usuario, &nombre);
         
         assert_eq!(resultado, Symbol::new(&env, "Hola"));
@@ -536,7 +558,7 @@ Agrega dentro del módulo `test`:
     }
 ```
 
-### Paso 7.4: Test - Nombre vacío falla
+### Paso 7.4: Test - Nombre vacío falla 🔪 CORREGIDO
 
 ```rust
     #[test]
@@ -551,12 +573,13 @@ Agrega dentro del módulo `test`:
         
         client.initialize(&admin);
         
-        let vacio = Symbol::new(&env, "");
+        // ⭐ Usar String::from_str para string vacío
+        let vacio = String::from_str(&env, "");
         client.hello(&usuario, &vacio);  // Debe fallar
     }
 ```
 
-### Paso 7.5: Test - Reset solo admin
+### Paso 7.5: Test - Reset solo admin 🔪 CORREGIDO
 
 ```rust
     #[test]
@@ -571,8 +594,8 @@ Agrega dentro del módulo `test`:
         
         client.initialize(&admin);
         
-        // Hacer saludos
-        client.hello(&usuario, &Symbol::new(&env, "Test"));
+        // ⭐ Hacer saludos con String
+        client.hello(&usuario, &String::from_str(&env, "Test"));
         assert_eq!(client.get_contador(), 1);
         
         // Admin puede resetear
@@ -628,7 +651,7 @@ test result: ok. 6 passed; 0 failed
 
 ---
 
-## 🎯 Fase 8: Build final y despliegue local
+## Fase 8: Build final y despliegue local
 
 ### Paso 8.1: Build optimizado
 
@@ -673,7 +696,7 @@ soroban contract optimize --wasm target/wasm32-unknown-unknown/release/hello_tib
 - [ ] Errores personalizados (4 tipos)
 - [ ] DataKey enum (3 keys)
 - [ ] `initialize()` con verificación
-- [ ] `hello()` con validaciones
+- [ ] `hello()` con validaciones usando `String`
 - [ ] `get_contador()` y `get_ultimo_saludo()`
 - [ ] `reset_contador()` con control de acceso
 
@@ -711,6 +734,10 @@ soroban contract optimize --wasm target/wasm32-unknown-unknown/release/hello_tib
 4. **¿Entiendes la diferencia entre Instance y Persistent?**
    - ¿Qué pusiste en cada uno?
    - ¿Por qué?
+
+5. **¿Por qué usamos `String` en lugar de `Symbol`?**
+   - ¿Qué métodos tiene `String` que `Symbol` no tiene?
+   - ¿En qué casos usarías cada uno?
 
 ---
 
@@ -799,6 +826,7 @@ Ahora sabes:
 - ✅ Validar inputs antes de cambiar estado
 - ✅ Implementar control de acceso
 - ✅ Escribir tests comprehensivos
+- ✅ **Entender cuándo usar `String` vs `Symbol`**
 
 **Esto es lo que separa un "Hello World" de un contrato production-ready.**
 

@@ -69,19 +69,19 @@ gantt
     section Semana 3 - Aplicación Intensiva
     Clase 5 - Token Contract          :21-10-2025, 21-10-2025
     Clase 6 - Frontend + Freighter    :23-10-2025, 23-10-2025
-    Refuerzo - DEX y Assets           :milestone, 25-10-2025, 1d
+    Refuerzo - Scaffold + Freighter   :milestone, 25-10-2025, 1d
 
     section Semana 4 - Integración
-    Clase 7 - Integración             :28-10-2025, 28-10-2025
-    Clase 8 - Soroban Avanzado        :30-10-2025, 30-10-2025
-    Refuerzo - Auth y Events          :milestone, 01-11-2025, 1d
+    Clase 7 - Front + Back + Contratos:28-10-2025, 28-10-2025
+    Clase 8 - Integración con productos:30-10-2025, 30-10-2025
+    Refuerzo - Producto          :milestone, 01-11-2025, 1d
 
     section Semana 5 - Arquitectura y Seguridad
     Clase 9 - Crowdfunding dApp       :04-11-2025, 04-11-2025
-    Clase 10 - Testing y Seguridad    :06-11-2025, 06-11-2025
-    Refuerzo - Testing dApp           :milestone, 08-11-2025, 1d
+    Clase 10 - Integración    :06-11-2025, 06-11-2025
+    Refuerzo - Producto               :milestone, 08-11-2025, 1d
 
-    section Semana 6 - Hackathon
+    section Semana 6 - Tips Hackathon
     Hackathon Día 1                   :11-11-2025, 11-11-2025
     Hackathon Día 2                   :13-11-2025, 13-11-2025
     Demo Day 🎓                       :milestone, 15-11-2025, 1d
@@ -101,44 +101,11 @@ stellar-course/
 ├── semana-3-aplicacion/         # Clases 5-6 + Sábado
 ├── semana-4-integracion/        # Clases 7-8
 ├── semana-5-arquitectura/       # Clases 9-10
-├── semana-6-hackathon/          # Clases 11-12
+├── semana-6-hackathonTips/          # Clases 11-12
 └── recursos/                    # Troubleshooting, Glosario
 ```
 
 **💡 Cada carpeta tiene su propio README con instrucciones específicas.**
-
----
-
-## 🚀 Inicio Rápido
-
-### 1️⃣ Clona el Repositorio
-```bash
-git clone https://github.com/buendia-builders/codigofutura.git
-cd codigofutura
-```
-
-### 2️⃣ Empieza por la Clase 0
-```bash
-cd clase-0-bienvenida
-# Sigue el README.md
-```
-
-### 3️⃣ Instala Herramientas (Semana 0)
-- **Navegador**: Chrome, Firefox, Brave
-- **Wallet**: [Freighter](https://www.freighter.app/)
-- **Editor**: [VS Code](https://code.visualstudio.com/)
-
-### 4️⃣ Para Soroban (Semana 2+)
-```bash
-# Instalar Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Instalar Stellar CLI
-cargo install --locked stellar-cli --features opt
-
-# Verificar
-stellar --version
-```
 
 ---
 
@@ -150,7 +117,7 @@ Al completar este curso, vas a poder:
 
 **⚡ Semana 3-4:** Desarrollar tokens, frontend React, integrar contratos
 
-**🏗️ Semana 5-6:** Arquitectura dApp, testing, security, presentar proyecto
+**🏗️ Semana 5-6:** Arquitectura dApp, testing, security, tips productos
 
 ---
 
@@ -191,19 +158,6 @@ Al completar:
 ---
 
 ## ❓ FAQ
-
-**¿Necesito experiencia previa?**
-No es necesario. Muchas Tiburonas empezaron desde cero, si recomendamos una base de web2, lógica y GitHub
-
-**¿Cuánto tiempo toma?**
-7 semanas + 1 pregrabada. ~60-80 horas totales.
-
-**¿Es gratis?**
-Sí, 100% gratuito gracias a SDF y BAF.
-
-**¿Qué hago si me atasco?**
-1. Revisa troubleshooting, 
-2. Pregunta en Telegram, 
 
 **Ver [FAQ Completo](./FAQ.md)**
 
@@ -269,10 +223,6 @@ Eres libre de usar, compartir, modificar y construir sobre este material.
 **#TiburonaBuilders** • **#StellarDevelopment** • **#Web3enEspañol**
 
 ---
-
-*Si la blockchain es el futuro del dinero,*
-*y el dinero mueve el mundo,*
-*entonces las Tiburonas construyen el futuro.*
 
 **🦈⚡ Vamos a construir⚡🦈**
 
