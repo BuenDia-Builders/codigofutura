@@ -77,14 +77,12 @@ gantt
     Refuerzo - Producto          :milestone, 01-11-2025, 1d
 
     section Semana 5 - Arquitectura y Seguridad
-    Clase 9 - Crowdfunding dApp       :04-11-2025, 04-11-2025
-    Clase 10 - Integración    :06-11-2025, 06-11-2025
-    Refuerzo - Producto               :milestone, 08-11-2025, 1d
+    Clase 9 - Templete dApp       :04-11-2025, 04-11-2025
+    Clase 10 - Integración        :06-11-2025, 06-11-2025
+    Refuerzo - Producto           :milestone, 08-11-2025, 1d
 
     section Semana 6 - Tips Hackathon
-    Hackathon Día 1                   :11-11-2025, 11-11-2025
-    Hackathon Día 2                   :13-11-2025, 13-11-2025
-    Demo Day 🎓                       :milestone, 15-11-2025, 1d
+    Pre Hackathon                   :11-11-2025, 11-11-2025
 ```
 
 **📊 Ver [Roadmap Detallado](./ROADMAP.md)**
@@ -101,7 +99,7 @@ stellar-course/
 ├── semana-3-aplicacion/         # Clases 5-6 + Sábado
 ├── semana-4-integracion/        # Clases 7-8
 ├── semana-5-arquitectura/       # Clases 9-10
-├── semana-6-hackathonTips/          # Clases 11-12
+├── semana-6-hackathonTips/      # Clases 11
 └── recursos/                    # Troubleshooting, Glosario
 ```
 
