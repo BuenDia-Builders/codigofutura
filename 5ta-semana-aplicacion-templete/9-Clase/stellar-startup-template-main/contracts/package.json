@@ -1,0 +1,11 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "stellar contract build",
+    "test": "cargo test",
+    "optimize": "stellar contract optimize --wasm target/wasm32-unknown-unknown/release/*.wasm",
+    "deploy:testnet": "stellar contract deploy --wasm target/wasm32-unknown-unknown/release/*.wasm --network testnet"
+  }
+}
