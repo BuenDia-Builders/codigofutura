@@ -695,3 +695,1657 @@ Ubicación: Miami, FL (USA) → envía dinero a Caracas, Venezuela
 - Te ayuda a pensar en modelo de negocio
 - Te dice si tu solución es viable económicamente
 
+**Ejemplo:**
+```
+PROBLEMA:
+Necesita enviar $200-300 mensuales a su familia en Venezuela.
+Hoy usa Western Union: tarda 3 días, cobra $25 de comisión +
+tasa de cambio mala. Su familia recibe ~15% menos.
+Dolor: 9/10 (es muy frustrante y costoso)
+Pagaría: $5 por envío si es inmediato y confiable
+(actualmente paga $25, así que $5 es 80% de ahorro)
+```
+---
+
+#### 💻 **TECH LITERACY (Alfabetización Tecnológica)**
+
+**Qué necesitas saber:**
+- ¿Tiene wallet? ¿Ha usado crypto antes?
+- ¿Nivel técnico? (escala 1-5)
+- ¿Dispositivo que usa? (móvil/desktop)
+
+**¿Por qué importa tanto en blockchain?**
+Blockchain tiene fricción de entrada. Necesitas saber si tu usuario puede:
+- Entender qué es una wallet
+- Guardar una seed phrase de forma segura
+- Entender que las transacciones son irreversibles
+- Navegar una interfaz crypto (addresses, confirmaciones, etc)
+
+**Escala de nivel técnico:**
+```
+⭐ 1/5 - Básico
+      Usa WhatsApp, Facebook. Miedo a "romper" cosas.
+      NO sabe qué es blockchain ni crypto.
+
+⭐⭐ 2/5 - Usuario casual
+      Usa apps comunes, puede descargar y configurar apps nuevas.
+      Ha oído de crypto pero nunca usó.
+
+⭐⭐⭐ 3/5 - Usuario competente
+      Usa múltiples apps, confortable con tecnología.
+      Tal vez tiene crypto en un exchange pero no self-custody.
+
+⭐⭐⭐⭐ 4/5 - Usuario avanzado
+      Entiende conceptos técnicos básicos.
+      Tiene wallet, ha hecho transacciones on-chain.
+
+⭐⭐⭐⭐⭐ 5/5 - Power user / Developer
+      Entiende cómo funciona blockchain internamente.
+      Usa DeFi, entiende smart contracts, tiene múltiples wallets.
+```
+
+**Ejemplo:**
+```
+TECH LITERACY:
+- Tiene smartphone Android básico
+- Usa WhatsApp y Facebook diariamente
+- NO ha usado crypto nunca
+- Nivel técnico: 2/5 ⭐⭐
+- Desconfía de "cosas raras" o muy técnicas
+- No tiene computadora, solo celular
+```
+
+**Implicaciones:**
+Si tu usuario es 1-2/5, necesitas:
+- ❌ NO usar jerga crypto
+- ✅ Onboarding súper guiado (paso a paso)
+- ✅ Opciones de recuperación amigables (no solo seed phrase)
+- ✅ Validación en cada paso (evitar errores costosos)
+- ✅ Soporte por chat/WhatsApp (no solo docs)
+
+---
+
+#### 😤 **FRUSTRACIONES ACTUALES**
+
+**Qué necesitas saber:**
+- Con las soluciones que probó (alternativas actuales)
+- Con blockchain en general (si lo intentó antes)
+- Con el proceso actual (pain points específicos)
+
+**¿Por qué profundizar en frustraciones?**
+Las frustraciones son oportunidades de diseño. Cada frustración es algo que TÚ puedes resolver mejor.
+
+**Categorías de frustraciones:**
+
+**1. Frustraciones funcionales** (la solución no hace lo que necesito)
+```
+Ejemplo: "Western Union no tiene sucursal en el pueblo de mi mamá"
+Oportunidad: App móvil que funciona donde sea
+```
+
+**2. Frustraciones de usabilidad** (es difícil de usar)
+```
+Ejemplo: "Tengo que llenar 100 papeles para enviar dinero"
+Oportunidad: Proceso de 3 pasos
+```
+
+**3. Frustraciones de costo** (es muy caro)
+```
+Ejemplo: "Me cobran $25 por enviar $200 (12.5%)"
+Oportunidad: Fees de $0.00001 con Stellar
+```
+
+**4. Frustraciones de tiempo** (es muy lento)
+```
+Ejemplo: "El dinero tarda 3 días en llegar y mi mamá lo necesita YA"
+Oportunidad: Confirmación en 5 segundos
+```
+
+**5. Frustraciones de confianza** (no me fío)
+```
+Ejemplo: "No sé si el dinero realmente llegó hasta que mi mamá me confirma"
+Oportunidad: Tracking en tiempo real on-chain
+```
+
+**Ejemplo completo:**
+```
+FRUSTRACIONES:
+- Western Union es caro ($25 de comisión + mala tasa de cambio)
+- Es lento (3 días de espera, su familia puede necesitarlo antes)
+- No tiene cuenta bancaria en Venezuela (dificulta otras opciones)
+- Los bancos cobran comisiones enormes (15-20% total)
+- Su familia necesita efectivo YA (no puede esperar días)
+- Tiene que ir físicamente a una sucursal (pierde tiempo)
+- Horarios limitados (solo de 9am-5pm)
+```
+
+**Ejercicio útil:**
+Por cada frustración, escribe cómo TU solución la resuelve:
+```
+Frustración → Solución
+Western Union cobra $25 → Nosotros: $0.00001
+Tarda 3 días → Nosotros: 5 segundos
+Ir físicamente → Nosotros: desde el celular
+Horarios limitados → Nosotros: 24/7
+```
+
+---
+
+#### ✨ **MOTIVACIONES**
+
+**Qué necesitas saber:**
+- ¿Por qué buscaría una solución?
+- ¿Qué lo motivaría a cambiar?
+- ¿Qué lo haría evangelista de tu producto?
+
+**Tipos de motivaciones:**
+
+**1. Motivaciones funcionales** (resolver el problema)
+```
+Ejemplo: "Necesito que mi familia reciba más dinero"
+```
+
+**2. Motivaciones emocionales** (cómo se siente)
+```
+Ejemplo: "Quiero sentir tranquilidad de que llegó el dinero"
+```
+
+**3. Motivaciones sociales** (estatus, pertenencia)
+```
+Ejemplo: "Si funciona, se lo recomendaré a mis amigas del trabajo"
+```
+
+**4. Motivaciones de autonomía** (control, independencia)
+```
+Ejemplo: "No quiero depender del horario del banco"
+```
+
+**¿Por qué importan las motivaciones?**
+- Te dicen qué destacar en tu comunicación/pitch
+- Te ayudan a diseñar features que realmente importan
+- Te indican cómo conseguir adopción (word-of-mouth, incentivos, etc)
+
+**Ejemplo:**
+```
+MOTIVACIONES:
+- Ahorrar en comisiones = más dinero para su familia
+  → Destacar: "Envía 99.9% de tu dinero, no 85%"
+
+- Velocidad para emergencias médicas
+  → Destacar: "Tu familia recibe el dinero en 5 segundos"
+
+- Si funciona, traería a sus amigas (son ~20 en el mismo trabajo)
+  → Oportunidad: Programa de referidos con incentivo
+
+- Independencia del horario bancario
+  → Destacar: "Envía dinero 24/7, incluso domingos a las 11pm"
+
+- Sentirse moderna y tech-savvy
+  → Diseño: App que se vea moderna, no anticuada
+
+📝 Template Completo de Proto-Persona
+markdown# PROTO-PERSONA: [Nombre]
+
+## 📸 Foto
+[Insertar foto de stock o avatar que represente al usuario]
+
+---
+
+## 👤 BÁSICO
+
+**Nombre:** María González  
+**Edad:** 34 años  
+**Ocupación:** Trabajadora doméstica en casas de familia  
+**Ubicación:** Miami, Florida (USA) → Envía dinero a Caracas, Venezuela  
+**Estado civil:** Casada, 2 hijos (12 y 9 años) que viven con ella en USA  
+**Nivel educativo:** Secundaria completa  
+**Ingreso mensual:** ~$2,000 USD (envía $200-300 a Venezuela)  
+
+---
+
+## 💬 FRASE QUE LA IDENTIFICA
+
+> "Cada dólar cuenta. Lo que pago en comisiones es comida que no llega a la mesa de mi mamá."
+
+---
+
+## ❗ EL PROBLEMA HOY
+
+María necesita enviar dinero a su madre en Venezuela mensualmente. 
+
+**Situación actual:**
+- Envía $200-300 USD mensualmente
+- Usa Western Union porque es lo que conoce
+- Tarda 3 días en llegar
+- Comisión: $25 fijos
+- Tasa de cambio: 10-15% peor que la real
+- **Total que pierde: ~15-18% ($30-54 por envío)**
+- Su madre recibe ~$170 de los $200 que María envía
+
+**Frecuencia:** Cada mes, a veces 2 veces si hay emergencias
+
+**Dolor:** 9/10 - Es muy frustrante ver cómo se "evapora" su dinero
+
+**Willingness to pay:** $5 por envío si es:
+- Instantáneo
+- Confiable
+- Fácil de usar
+- Seguro
+
+---
+
+## 🔄 CÓMO LO RESUELVE HOY
+
+**Alternativas que ha probado:**
+
+1. **Western Union** (solución actual)
+   - ✅ Conocida, confiable
+   - ❌ Carísima
+   - ❌ Lenta
+   - ❌ Tiene que ir físicamente
+
+2. **Transferencia bancaria**
+   - Probó una vez
+   - ❌ Su madre no tiene cuenta bancaria en Venezuela
+   - ❌ Tardó 7 días
+   - ❌ Comisión de $50
+   - ❌ NO lo volvió a usar
+
+3. **Enviar con conocidos que viajan**
+   - Lo ha hecho 2-3 veces
+   - ❌ Poco confiable
+   - ❌ No siempre hay alguien viajando
+   - ❌ Riesgo de robo
+
+**¿Por qué estas alternativas NO funcionan?**
+- Son muy caras (pierdo casi 20% de lo que envío)
+- Son lentas (mi mamá puede necesitarlo urgente)
+- Requieren que mi mamá tenga banco (y no tiene)
+- No están disponibles 24/7 (emergencias pasan de noche)
+
+---
+
+## 💻 TECH LITERACY
+
+**Dispositivo principal:** Smartphone Android (Samsung Galaxy A13, 3 años de uso)
+
+**Apps que usa diariamente:**
+- WhatsApp (mensajes, llamadas, videollamadas)
+- Facebook (para conectar con familia)
+- YouTube (videos de cocina, música)
+- Google Maps (para trabajo)
+
+**Experiencia con crypto:**
+- ❌ NO ha usado crypto nunca
+- Ha escuchado de "Bitcoin" en noticias pero no entiende qué es
+- Le da miedo porque "dicen que es para cosas ilegales"
+- No sabe qué es una wallet
+
+**Nivel técnico:** ⭐⭐ 2/5
+
+**Comportamiento tecnológico:**
+- Prefiere llamadas sobre mensajes de texto
+- Pide ayuda a sus hijos para cosas "complicadas"
+- Desconfía de apps nuevas (miedo a estafas)
+- Lee cada mensaje de confirmación con cuidado
+- No le gusta "probar cosas", prefiere que funcione a la primera
+
+**Barreras:**
+- Miedo a cometer un error que le cueste dinero
+- No entiende términos técnicos en inglés
+- Prefiere que le expliquen en persona o por video
+- Le cuesta confiar en cosas que no puede "tocar"
+
+---
+
+## 😤 FRUSTRACIONES
+
+**Con soluciones actuales:**
+
+1. **Costo absurdo**
+   - "Pago casi $30 por enviar $200. Es más de 10%. Es un robo."
+   - "Eso que pierdo en comisiones es la comida de 3 días para mi mamá"
+
+2. **Lentitud**
+   - "Una vez mi mamá necesitó dinero para medicina urgente. Tardó 3 días."
+   - "No puedo dormir tranquila hasta que mi mamá confirma que llegó"
+
+3. **Inconveniencia**
+   - "Tengo que ir a Western Union en mi día libre, perder 2 horas"
+   - "Solo abren hasta las 5pm, yo salgo del trabajo a las 6pm"
+
+4. **Falta de opciones para su mamá**
+   - "Mi mamá no tiene banco, entonces muchas opciones no sirven"
+   - "Vive en un pueblo pequeño, no hay muchos servicios"
+
+5. **Desconfianza**
+   - "He escuchado de gente que le robaron el dinero"
+   - "No sé si puedo confiar en apps nuevas"
+
+**Con crypto en general (percepción):**
+- "Es muy complicado, no es para personas como yo"
+- "¿Y si me equivoco y pierdo todo mi dinero?"
+- "No entiendo cómo funciona, eso me da miedo"
+
+---
+
+## ✨ MOTIVACIONES
+
+**¿Qué la motivaría a probar algo nuevo?**
+
+1. **Ahorro significativo**
+   - Si ahorra $20-25 por envío, eso es $240-300 al año
+   - Podría enviar más dinero a su familia
+   - "Cada dólar extra que llegue a mi mamá vale la pena"
+
+2. **Velocidad/tranquilidad**
+   - Ver en tiempo real que el dinero llegó
+   - Poder enviar dinero en emergencias (incluso de madrugada)
+   - "Dormir tranquila sabiendo que ya llegó"
+
+3. **Conveniencia**
+   - Hacerlo desde su casa, en pijama, sin salir
+   - Los domingos también (su día libre)
+   - En 5 minutos, no 2 horas
+
+4. **Recomendación de confianza**
+   - Si una amiga del trabajo se lo recomienda
+   - Si alguien le explica paso a paso
+   - Si su hija mayor le dice que es seguro
+
+5. **Efecto red**
+   - "Trabaja con ~20 mujeres en la misma situación"
+   - "Si yo lo uso y funciona, se lo diré a todas"
+   - Le gusta ayudar a su comunidad
+
+**¿Qué la haría evangelista?**
+- Que funcione perfectamente las primeras 3 veces
+- Que su mamá esté feliz con lo rápido que llegó
+- Que ahorre dinero visible (poder enviar $50 extra por lo ahorrado)
+- Que sea fácil de explicar a otras personas
+
+---
+
+## 🎯 OBJETIVOS CON NUESTRA APP
+
+**Objetivo principal:**
+Enviar $200-300 mensuales a su madre en Venezuela de forma:
+- Rápida (minutos, no días)
+- Económica (perder <$5 en fees)
+- Simple (sin salir de casa)
+- Confiable (que siempre funcione)
+
+**Objetivos secundarios:**
+- Poder enviar dinero extra en emergencias sin esperar
+- Trackear que el dinero llegó (confirmación)
+- Eventualmente, enseñarle a su mamá a usar también
+
+**Criterio de éxito para María:**
+- ✅ Envió $200 y su mamá recibió $195+ (98%+)
+- ✅ El dinero llegó en menos de 1 hora
+- ✅ Lo hizo desde su celular en <10 minutos
+- ✅ Su mamá pudo cambiarlo a efectivo fácilmente
+
+---
+
+## 💡 INSIGHTS CLAVE
+
+1. **El dolor NO es técnico, es emocional y financiero**
+   - No le importa "blockchain" o "descentralización"
+   - Le importa: dinero, tiempo, tranquilidad
+
+2. **Necesita confianza antes de probar**
+   - No adoptará por publicidad
+   - Adoptará por recomendación de pares
+
+3. **La UX debe ser invisible**
+   - Menos pasos, más claridad
+   - Lenguaje simple (español, sin tecnicismos)
+   - Confirmaciones visibles en cada paso
+
+4. **El valor debe ser obvio e inmediato**
+   - Mostrar cuánto ahorra en CADA envío
+   - Comparar con Western Union lado a lado
+   - Destacar velocidad con timer
+
+5. **Oportunidad de red effect**
+   - 1 María satisfecha = 10-20 nuevas usuarias
+   - Programa de referidos es clave
+   - Soporte en español es CRÍTICO
+
+---
+
+## 🚫 ANTI-PERSONAS (quién NO es)
+
+María NO es:
+- ❌ Una tech enthusiast interesada en blockchain
+- ❌ Alguien con ingresos altos que puede tolerar fees
+- ❌ Una persona que puede esperar días para el dinero
+- ❌ Alguien que tiene tiempo para aprender cosas complejas
+
+---
+
+## 📊 DATOS DEMOGRÁFICOS DEL SEGMENTO
+
+María representa a:
+- **~3.5 millones de latinos** en USA enviando remesas
+- **$150 mil millones** enviados anualmente desde USA a LATAM
+- **Promedio de $200-300** por envío
+- **~10-12 envíos** por año por persona
+- **Pérdida promedio: 8-15%** en fees + tasa de cambio
+
+**Oportunidad de mercado:**
+Si capturamos 0.1% de este mercado = 3,500 usuarios
+3,500 usuarios × $250 promedio × 12 envíos/año × 2% fee = **$2.52M de volumen anual**
+
+---
+```
+
+---
+
+## 🎯 Actividad Práctica: Construir Proto-Persona
+
+**Tiempo:** 10 minutos  
+**Herramienta:** Figma / Miro / Google Docs
+
+### Instrucciones:
+
+1. **Usa el template anterior** como guía
+2. **Crea UNA proto-persona** (tu usuario principal)
+3. **Sé SÚPER específica**
+
+### ❌ Ejemplos MALOS (muy genéricos):
+```
+❌ "Jóvenes que quieren invertir"
+❌ "Personas que usan crypto"
+❌ "Usuarios de DeFi"
+❌ "Desarrolladores"
+```
+
+### ✅ Ejemplos BUENOS (específicos):
+```
+✅ "Ana, 24 años, freelancer en Argentina que cobra en USD pero 
+    necesita pesos para pagar su alquiler"
+
+✅ "Carlos, 45 años, dueño de una ferretería en México que exporta 
+    a USA y tarda 5 días en recibir pagos"
+
+✅ "Lucía, 19 años, estudiante en Colombia que recibe mesada de 
+    sus padres que trabajan en España"
+```
+
+### 💡 Tip clave:
+
+Si tu proto-persona dice "personas que..." o "usuarios que...", **PARA**.
+
+Necesitas un nombre, una edad, un contexto específico.
+
+**¿Por qué?** Porque "personas" no existe. María existe. Ana existe. Y cada una tiene problemas diferentes y usa productos de forma diferente.
+
+---
+
+## 🎯 Del Problema al POV (Point of View)
+
+### ¿Qué es un POV?
+
+El **Point of View** (Punto de Vista) es **UNA FRASE** que resume todo tu entendimiento del usuario y el problema.
+
+Es el puente entre la investigación (proto-persona) y la solución (MVP).
+
+---
+
+### Estructura del POV
+```
+[Persona Usuaria] necesita [acción/solución] 
+porque [insight/dolor],
+y [tecnología Stellar] permite [beneficio único]
+```
+
+**Desglose de cada parte:**
+
+#### 1. **[Persona Usuaria]** - Quién
+Nombre específico + contexto mínimo
+```
+✅ "María, trabajadora doméstica en USA"
+❌ "Las personas que envían remesas"
+```
+
+#### 2. **necesita [acción/solución]** - Qué
+Verbo de acción + necesidad específica
+```
+✅ "enviar dinero a Venezuela de forma inmediata y económica"
+❌ "usar crypto"
+```
+
+#### 3. **porque [insight/dolor]** - Por qué
+El dolor profundo, no superficial
+```
+✅ "las remesas tradicionales le cobran 15% y tardan días"
+❌ "es costoso"
+```
+
+#### 4. **y [tecnología Stellar] permite [beneficio único]** - Cómo
+La ventaja específica de Stellar
+```
+✅ "Stellar permite transferencias en 5 segundos con fees de 
+    $0.00001 usando USDC"
+❌ "blockchain es mejor"
+```
+
+---
+
+### ✅ Ejemplos de POVs BUENOS
+
+#### Caso #1: Remesas
+```
+María, trabajadora doméstica en USA, necesita enviar dinero a 
+Venezuela de forma inmediata y económica porque las remesas 
+tradicionales le cobran 15% y tardan días, y Stellar permite 
+transferencias en 5 segundos con fees de $0.00001 usando USDC.
+```
+
+**Por qué funciona:**
+- ✅ Usuario específico (María, trabajadora doméstica)
+- ✅ Necesidad clara (enviar dinero rápido y barato)
+- ✅ Dolor cuantificado (15%, varios días)
+- ✅ Tecnología justificada (velocidad + costo de Stellar)
+
+---
+
+#### Caso #2: Venta de arte digital
+```
+Artistas digitales en LATAM necesitan vender su trabajo 
+internacionalmente sin intermediarios porque las galerías se 
+quedan con 40% y los pagos tardan meses, y Stellar permite 
+tokenizar arte como NFTs con liquidación instantánea.
+```
+
+**Por qué funciona:**
+- ✅ Usuario específico (artistas digitales en LATAM)
+- ✅ Necesidad clara (vender sin intermediarios)
+- ✅ Dolor cuantificado (40% de comisión, meses de espera)
+- ✅ Tecnología justificada (NFTs + liquidación rápida en Stellar)
+
+---
+
+#### Caso #3: Pequeños exportadores
+```
+Pequeños exportadores necesitan cobrar de clientes internacionales 
+sin perder en tasas de cambio porque los bancos cobran 3-5% + 
+demoras, y Stellar permite recibir USDC directamente con conversión 
+a moneda local automática.
+```
+
+**Por qué funciona:**
+- ✅ Usuario específico (pequeños exportadores)
+- ✅ Necesidad clara (cobrar sin perder en tasa de cambio)
+- ✅ Dolor cuantificado (3-5% + demoras)
+- ✅ Tecnología justificada (path payments de Stellar)
+
+---
+
+### ❌ Ejemplos de POVs MALOS
+
+#### Caso #1:
+```
+❌ "Las personas usuarias necesitan una app blockchain fácil de usar"
+```
+
+**Problemas:**
+- ❌ ¿Qué personas usuarias? Demasiado genérico
+- ❌ ¿Para qué necesitan la app? No hay objetivo claro
+- ❌ ¿Por qué blockchain? No está justificado
+- ❌ No hay dolor identificado
+- ❌ No menciona Stellar específicamente
+
+---
+
+#### Caso #2:
+```
+❌ "La gente quiere invertir en crypto de forma segura"
+```
+
+**Problemas:**
+- ❌ "La gente" - ¿quién específicamente?
+- ❌ Muy genérico, no hay insight profundo
+- ❌ No justifica por qué Stellar (podría ser cualquier blockchain)
+- ❌ "Forma segura" es vago (¿segura de qué?)
+- ❌ No hay dolor cuantificado
+
+---
+
+#### Caso #3:
+```
+❌ "Vamos a revolucionar las finanzas con Web3"
+```
+
+**Problemas:**
+- ❌ Buzzwords sin sustancia
+- ❌ No hay usuario identificado
+- ❌ No hay problema específico
+- ❌ No hay justificación de tecnología
+- ❌ "Revolucionar" es una ambición, no un POV
+
+---
+
+### ✅ Checklist del POV
+
+Tu POV debe cumplir con TODOS estos criterios:
+
+#### ☑️ 1. Persona Usuaria específica
+```
+❌ "la gente", "personas usuarias", "clientes"
+✅ Nombre + contexto (María, trabajadora doméstica en USA)
+```
+
+#### ☑️ 2. Necesidad clara (verbo de acción)
+```
+❌ "mejorar su experiencia"
+✅ "enviar dinero", "vender arte", "cobrar facturas"
+```
+
+#### ☑️ 3. Insight real (basado en investigación)
+```
+❌ "porque es difícil"
+✅ "porque pierden 15% en comisiones y tardan 3 días"
+```
+
+#### ☑️ 4. Tecnología justificada
+```
+❌ "porque blockchain es mejor"
+✅ "Stellar permite transferencias en 5 seg con fees de $0.00001"
+```
+
+#### ☑️ 5. Beneficio medible
+```
+❌ "será más rápido"
+✅ "5 segundos vs. 3 días" o "99.99% del dinero llega vs. 85%"
+```
+
+---
+
+### 🛠️ Cómo construir tu POV (paso a paso)
+
+#### Paso 1: Identifica tu persona usuaria principal
+```
+"¿Quién es?"
+→ María, 34 años, trabajadora doméstica en Miami
+```
+
+#### Paso 2: Define su necesidad core
+```
+"¿Qué necesita hacer?"
+→ Enviar dinero a su familia en Venezuela
+```
+
+#### Paso 3: Profundiza en el dolor
+```
+"¿Por qué las alternativas actuales no funcionan?"
+→ Western Union cobra 15% y tarda 3 días
+```
+
+#### Paso 4: Conecta con Stellar
+```
+"¿Qué hace Stellar que resuelve esto?"
+→ Transferencias en 5 segundos con fees casi nulos usando USDC
+```
+
+#### Paso 5: Junta todo en una frase
+```
+María, trabajadora doméstica en USA, necesita enviar dinero a 
+Venezuela de forma inmediata y económica porque las remesas 
+tradicionales le cobran 15% y tardan días, y Stellar permite 
+transferencias en 5 segundos con fees de $0.00001 usando USDC.
+```
+
+---
+
+## 🎯 Actividad Práctica: Escribir tu POV
+
+**Tiempo:** 7 minutos
+
+### Template para completar:
+```
+[Nombre + contexto breve], 
+
+necesita [verbo de acción + qué específicamente]
+
+porque [dolor cuantificado + por qué alternativas fallan],
+
+y Stellar/Soroban permite [beneficio técnico específico].
+```
+
+### Checklist rápido antes de terminar:
+```
+☐ ¿Tiene nombre específico (no "personas usuarias")?
+☐ ¿La necesidad es clara y accionable?
+☐ ¿El dolor está cuantificado (tiempo, dinero, frecuencia)?
+☐ ¿Mencionas Stellar/Soroban explícitamente?
+☐ ¿El beneficio de Stellar es único (no podría ser otra blockchain)?
+☐ ¿Es una frase (no un párrafo largo)?
+```
+
+### Cuando termines:
+
+1. Lee tu POV en voz alta
+2. Pregúntate: **"¿Un extraño entendería el problema y la solución en 15 segundos?"**
+3. Si la respuesta es NO, simplifica
+
+---
+
+## 🎯 Parte 3: Definir el MVP
+
+### ¿Qué es un MVP?
+
+**MVP = Minimum Viable Product** = Lo MÍNIMO que necesitas construir para VALIDAR tu idea.
+
+---
+
+### ❌ Lo que un MVP NO es:
+
+#### 1. **NO es el producto final**
+```
+❌ "Vamos a construir la app perfecta con todas las features"
+✅ "Vamos a construir LO MÍNIMO para probar si resuelve el problema"
+```
+
+#### 2. **NO necesita todas las funcionalidades**
+```
+❌ "Necesitamos autenticación con Google, Apple, email, 
+    2FA, recuperación por SMS..."
+✅ "Conectar wallet es suficiente para el MVP"
+```
+
+#### 3. **NO necesita UI perfecta**
+```
+❌ "Primero diseñemos todo en Figma con animaciones"
+✅ "Wireframes básicos son suficientes, puede ser feo pero funcional"
+```
+
+#### 4. **NO necesita escalabilidad infinita**
+```
+❌ "Debe soportar 1 millón de usuarios simultáneos"
+✅ "Si funciona con 10 usuarios en la hackathon, es suficiente"
+```
+
+#### 5. **NO necesita sistema de usuarios complejo**
+```
+❌ "Profiles, settings, notifications, friend lists..."
+✅ "Una wallet address es todo el 'usuario' que necesitas"
+```
+
+---
+
+### ✅ Lo que un MVP SÍ es:
+
+El MVP perfecto para hackathon tiene **3 cosas**:
+
+#### 1️⃣ **UNA funcionalidad principal que funcione de punta a punta**
+
+**NO** 5 cosas a medias.  
+**SÍ** Una cosa completamente demostrable.
+```
+❌ "Login + Dashboard + Send + Receive + History + Settings"
+   (6 cosas al 50% cada una)
+
+✅ "Send money de wallet A a wallet B"
+   (1 cosa al 100%)
+```
+
+**¿Cómo identificar tu funcionalidad CORE?**
+
+Pregúntate:
+```
+"Si solo puedo construir UNA cosa en esta hackathon, 
+¿cuál demuestra que mi idea funciona?"
+```
+
+**Ejemplos:**
+
+| Proyecto | Funcionalidad CORE |
+|----------|-------------------|
+| App de remesas | Enviar USDC de persona A a persona B |
+| Invoice factoring | Convertir PDF de factura en token vendible |
+| NFT certificados | Emitir certificado educativo verificable on-chain |
+| Crowdfunding | Crear campaña + recibir fondos + tracking transparente |
+
+---
+
+#### 2️⃣ **Integración real con Stellar**
+
+Aunque sea **testnet**, debe mostrar:
+- Transacción real
+- Smart contract real
+- Asset real
+```
+❌ "Vamos a simular la transacción con datos fake"
+✅ "Vamos a hacer una transacción real en testnet y mostrarla 
+    en Stellar Explorer"
+
+**¿Qué cuenta como "integración real"?**
+✅ SÍ cuenta:
+
+- Payment operation con Stellar SDK
+- Smart contract deployado en testnet de Soroban
+- Asset creado y transferido
+- Transacción visible en explorer
+
+❌ NO cuenta:
+- Mock data (simular sin blockchain)
+- Hardcodear resultados
+- "Lo haremos después de la hackathon"
+- Screenshot de otra transacción
+
+**Mínimo aceptable:**
+Usa Stellar SDK (JS, Python, Rust, etc.)
+Conecta a testnet (no necesita ser mainnet)
+Ejecuta al menos 1 operación on-chain
+Muestra el resultado en un explorer o en tu UI
+
+
+---
+
+#### 3️⃣ **UI que explique el valor**
+
+No necesita ser **bonita**, pero SÍ **clara**.
+markdown- Mock data (simular sin blockchain)
+- Hardcodear resultados
+- "Lo haremos después de la hackathon"
+- Screenshot de otra transacción
+
+**Mínimo aceptable:**
+```
+1. Usa Stellar SDK (JS, Python, Rust, etc.)
+2. Conecta a testnet (no necesita ser mainnet)
+3. Ejecuta al menos 1 operación on-chain
+4. Muestra el resultado en un explorer o en tu UI
+```
+
+---
+
+#### 3️⃣ **UI que explique el valor**
+
+No necesita ser **bonita**, pero SÍ **clara**.
+```
+❌ "Hermosas animaciones, gradientes, ilustraciones custom"
+✅ "Botones que dicen claramente qué hacen, feedback visible"
+```
+
+**Elementos mínimos de UI:**
+
+**Pantalla 1: ¿Qué es esto?**
+```
+✅ Título claro: "Envía dinero a Venezuela en 5 segundos"
+✅ Subtítulo explicativo
+✅ Call to action principal: "Enviar dinero ahora"
+```
+
+**Pantalla 2: La acción principal**
+```
+✅ Form claro con labels
+✅ Validación de inputs
+✅ Botón de acción destacado
+✅ Loading state cuando procesa
+```
+
+**Pantalla 3: Confirmación**
+```
+✅ Mensaje de éxito claro
+✅ Detalles de la transacción
+✅ Link a explorer
+✅ Próximos pasos (enviar otra, ver historial)
+```
+
+**NO necesitas:**
+- ❌ Modo oscuro
+- ❌ Múltiples idiomas
+- ❌ Animaciones complejas
+- ❌ Responsive perfecto (elige mobile O desktop)
+- ❌ Ilustraciones custom
+- ❌ Tutorial interactivo
+
+---
+
+### 🎯 Framework del MVP
+
+Usa este framework para definir tu MVP:
+
+#### 📌 **FUNCIONALIDAD CORE** (la que NO puede faltar)
+
+**Pregunta 1:**
+```
+¿Qué es lo ÚNICO que debe hacer mi app para demostrar valor?
+```
+
+**Pregunta 2:**
+```
+Si solo puedo construir UNA cosa, ¿cuál es?
+```
+
+**Template:**
+```
+FUNCIONALIDAD CORE:
+"[Verbo] + [qué] + [resultado visible]"
+
+Ejemplo:
+"Enviar USDC de wallet A a wallet B y mostrar confirmación"
+```
+
+---
+
+#### ⚙️ **INTEGRACIÓN STELLAR**
+
+**Preguntas a responder:**
+```
+¿Qué de Stellar/Soroban están usando?
+□ Smart contract → ¿Cuál lógica?
+□ Asset/token → ¿Cuál?
+□ Payments → ¿Entre quiénes?
+□ DEX → ¿Para qué?
+□ Path payments → ¿Qué conversión?
+□ Claimable balances → ¿Para qué caso?
+□ Otro → ¿Qué?
+```
+
+**Template:**
+```
+INTEGRACIÓN STELLAR:
+Usaremos: [marcar opciones de arriba]
+
+Específicamente:
+- Operación principal: ______________________
+- Asset(s) involucrado(s): __________________
+- Smart contract (si aplica): _______________
+- SDK: __________ (JS/Python/Rust/etc)
+- Network: Testnet / Mainnet
+```
+
+**Ejemplo:**
+```
+INTEGRACIÓN STELLAR:
+Usaremos: ☑ Payments, ☑ Asset USDC
+
+Específicamente:
+- Operación principal: Payment operation
+- Asset: USDC (asset existente en Stellar)
+- Smart contract: N/A (no necesario para MVP)
+- SDK: Stellar SDK for JavaScript
+- Network: Testnet
+- Explorer: stellar.expert para mostrar TX
+```
+
+---
+
+#### 🔄 **FLUJO MÍNIMO** (3-5 pasos máximo)
+
+**Template:**
+```
+FLUJO DEL USUARIO:
+
+1. Usuario llega y ve...
+   ________________________________
+
+2. Usuario hace (acción clave)...
+   ________________________________
+
+3. Stellar procesa (backend)...
+   ________________________________
+
+4. Usuario ve resultado/confirmación
+   ________________________________
+
+5. (Opcional) Usuario puede hacer X adicional
+   ________________________________
+```
+
+**Ejemplo - App de remesas:**
+```
+1. Usuario llega y ve...
+   → Landing con "Envía dinero a Venezuela en 5 seg"
+   → Botón "Conectar Wallet"
+
+2. Usuario hace (acción clave)...
+   → Conecta Freighter wallet
+   → Ingresa dirección destino
+   → Ingresa monto en USD
+   → Click en "Enviar"
+
+3. Stellar procesa (backend)...
+   → Payment operation con Stellar SDK
+   → Transferencia de USDC
+   → Confirmación en 5 segundos
+
+4. Usuario ve resultado/confirmación
+   → Pantalla de éxito: "¡Enviado!"
+   → Detalles: $200 enviados, fee $0.00001
+   → Link a Stellar Explorer con TX hash
+   → Comparación: "Ahorraste $24.99 vs Western Union"
+
+5. (Opcional) Usuario puede hacer X adicional
+   → Botón "Enviar otro"
+   → Botón "Ver historial"
+```
+
+---
+
+#### ✅ **ÉXITO = ¿Cómo sé que funcionó?**
+
+**Define criterios observables:**
+```
+CRITERIO 1: ¿Qué debe ver el usuario al final?
+_____________________________________________
+
+CRITERIO 2: ¿Qué queda registrado en Stellar?
+_____________________________________________
+
+CRITERIO 3: ¿Qué evidencia tengo de que resuelve el problema?
+_____________________________________________
+```
+
+**Ejemplo:**
+```
+✅ CRITERIO 1: ¿Qué debe ver el usuario?
+- Pantalla de confirmación con mensaje de éxito
+- Monto enviado y fee cobrado
+- Tiempo transcurrido (5 segundos)
+- Link a explorador con TX hash
+
+✅ CRITERIO 2: ¿Qué queda registrado en Stellar?
+- Transacción visible en stellar.expert
+- Payment operation de USDC
+- Source account = sender
+- Destination account = receiver
+- Amount = cantidad enviada
+
+✅ CRITERIO 3: ¿Evidencia de que resuelve el problema?
+- Usuario gastó $0.00001 en fee (vs $25 de Western Union)
+- Transacción tomó 5 segundos (vs 3 días)
+- No requirió salir de casa (vs ir a sucursal)
+```
+
+---
+
+## 📚 Ejemplos Completos de MVP
+
+### Ejemplo 1: App de Remesas
+
+#### ❌ MVP MALO (demasiado ambicioso):
+```
+❌ Sistema de usuarios con KYC completo
+❌ Múltiples métodos de pago (tarjeta, banco, crypto)
+❌ Conversión automática a 10 monedas diferentes
+❌ App móvil nativa para iOS y Android
+❌ Notificaciones push
+❌ Chat de soporte integrado
+❌ Sistema de referidos
+❌ Dashboard con analytics
+
+→ IMPOSIBLE en 48 horas de hackathon
+```
+
+#### ✅ MVP BUENO:
+```
+FUNCIONALIDAD CORE:
+"Enviar USDC de wallet A a wallet B y mostrar confirmación"
+
+INTEGRACIÓN STELLAR:
+- Payment operation con Stellar SDK
+- Asset: USDC (usar asset existente en Stellar)
+- Mostrar TX en stellar.expert
+
+FLUJO (5 pasos):
+1. Usuario conecta wallet (Freighter)
+2. Ingresa dirección destino + monto
+3. Confirma transacción
+4. Ve confirmación en 5 segundos + link a Explorer
+5. (Extra) Ve historial de envíos
+
+ÉXITO:
+- Transacción visible en blockchain
+- Usuario recibe USDC en su wallet
+- Se demuestra velocidad vs. alternativas (5 seg vs días)
+- Se demuestra costo vs. alternativas ($0.00001 vs $25)
+```
+
+**Por qué funciona este MVP:**
+- ✅ Se puede construir en 48 horas
+- ✅ Demuestra el valor core (velocidad + costo)
+- ✅ Usa Stellar de verdad
+- ✅ Es demostrable en un pitch de 5 minutos
+
+---
+
+### Ejemplo 2: Tokenización de Facturas
+
+#### ❌ MVP MALO (demasiado complejo):
+```
+❌ Marketplace completo con búsqueda y filtros
+❌ Sistema de subastas en tiempo real
+❌ Rating de compradores y vendedores
+❌ Integración con 5 bancos diferentes
+❌ OCR automático de facturas
+❌ Sistema de dispute resolution
+❌ KYC/AML completo
+
+→ DEMASIADO COMPLEJO para hackathon
+```
+
+#### ✅ MVP BUENO:
+```
+FUNCIONALIDAD CORE:
+"Convertir una factura PDF en un token vendible en Stellar"
+
+INTEGRACIÓN STELLAR:
+- Smart contract en Soroban que representa la factura
+- Asset que puede transferirse entre cuentas
+- Escrow simple para la transacción
+
+FLUJO (5 pasos):
+1. Empresa sube factura (PDF)
+2. Sistema crea asset en Stellar con metadata
+3. Empresa lista el token con precio de venta
+4. Comprador compra el token (simular con 2 wallets)
+5. Al vencimiento, token se liquida automáticamente
+
+ÉXITO:
+- Asset creado y visible en Stellar
+- Transferencia de propiedad demostrada on-chain
+- Smart contract ejecuta lógica de pago al vencimiento
+- Metadata de factura accesible
+```
+
+**Por qué funciona este MVP:**
+- ✅ Demuestra el concepto core (factura → token)
+- ✅ Usa Soroban smart contracts
+- ✅ Muestra el ciclo completo (crear → vender → liquidar)
+- ✅ Es construible en 48-72 horas
+
+---
+
+### Ejemplo 3: Certificados Educativos NFT
+
+#### ❌ MVP MALO:
+```
+❌ Plataforma completa de cursos online
+❌ Sistema de exámenes
+❌ Tracking de progreso del estudiante
+❌ Marketplace de certificados
+❌ Sistema de verificación con IA
+❌ Integración con LinkedIn
+
+→ DEMASIADO AMBICIOSO
+```
+
+#### ✅ MVP BUENO:
+```
+FUNCIONALIDAD CORE:
+"Emitir un certificado educativo como NFT verificable"
+
+INTEGRACIÓN STELLAR:
+- NFT como asset único en Stellar
+- Metadata con información del certificado
+- Función de verificación pública
+
+FLUJO (4 pasos):
+1. Institución emite certificado (form simple)
+2. Sistema crea NFT en Stellar con metadata
+3. Estudiante recibe NFT en su wallet
+4. Cualquiera puede verificar con QR code
+
+ÉXITO:
+- NFT creado y transferido a estudiante
+- Metadata visible (nombre, curso, fecha, institución)
+- QR code genera y muestra certificado
+- Verificación funciona en stellar.expert
+```
+
+**Por qué funciona este MVP:**
+- ✅ Resuelve el problema core (certificados falsos)
+- ✅ Demostrable en 2 minutos
+- ✅ Usa Stellar assets de forma innovadora
+- ✅ Fácil de extender después
+
+---
+
+## 🗺️ Del MVP al Taskflow
+
+### ¿Qué es un Taskflow?
+
+El **Taskflow** es el mapa de TODOS los pasos que da la persona usuaria desde que llega hasta que logra su objetivo.
+
+**Diferencia con el MVP:**
+- **MVP:** QUÉ funcionalidades tiene
+- **Taskflow:** CÓMO las usa el usuario paso a paso
+
+---
+
+### 🧩 Componentes de un Taskflow
+
+#### 🟢 **ENTRADA** → ¿Dónde/cómo llega la persona usuaria?
+
+**Opciones:**
+- Landing page (URL directo)
+- Link compartido
+- QR code
+- Email con link
+- Redes sociales
+- Búsqueda en Google
+
+**Ejemplo:**
+```
+🟢 María abre la app desde un link que le envió su amiga por WhatsApp
+```
+
+---
+
+#### 📦 **ACCIONES** → ¿Qué hace la persona usuaria paso a paso?
+
+**Tipos de acciones:**
+- Click en botón
+- Completar formulario
+- Conectar wallet
+- Confirmar transacción
+- Escanear QR
+- Subir archivo
+
+**Ejemplo:**
+```
+📦 María hace click en "Conectar Wallet"
+📦 María selecciona Freighter en el popup
+📦 María autoriza la conexión
+📦 María ingresa dirección de su mamá
+📦 María ingresa $200
+📦 María hace click en "Enviar"
+```
+
+---
+
+#### ⚡ **DECISIONES** → Puntos donde el flujo se divide
+
+**Preguntas que bifurcan:**
+- ¿Tiene wallet? → SÍ / NO
+- ¿Transacción exitosa? → SÍ / ERROR
+- ¿Es primera vez? → SÍ / NO
+- ¿Tiene fondos suficientes? → SÍ / NO
+
+**Ejemplo:**
+```
+⚡ ¿María tiene Freighter instalado?
+   └─ SÍ → Conectar wallet
+   └─ NO → Mostrar instrucciones de instalación
+```
+
+---
+
+#### ⚙️ **PROCESOS STELLAR** → Qué pasa en background
+
+**Operaciones invisibles para el usuario:**
+- Smart contract ejecutándose
+- Transacción propagándose en la red
+- Confirmación de validadores
+- Actualización de balances
+
+**Ejemplo:**
+```
+⚙️ Backend construye payment operation
+⚙️ Firma transacción con server key
+⚙️ Envía a Stellar network
+⚙️ Espera confirmación (3-5 seg)
+⚙️ Recibe TX hash
+```
+
+---
+
+#### 🏁 **SALIDA/ÉXITO** → ¿Cómo termina el flujo?
+
+**Estados finales posibles:**
+- ✅ Éxito (objetivo logrado)
+- ❌ Error (algo falló)
+- ⏸️ Pendiente (requiere acción adicional)
+
+**Ejemplo:**
+```
+🏁 María ve pantalla de confirmación
+   - Mensaje: "¡Enviado exitosamente!"
+   - Monto: $200 USDC
+   - Fee: $0.00001
+   - Tiempo: 5 segundos
+   - Link a stellar.expert
+```
+
+---
+
+### 🔣 Símbolos del Taskflow
+
+Usa estos símbolos para dibujar tu taskflow:
+```
+🟢 Círculo     = Inicio / Fin
+📄 Rectángulo  = Pantalla / Acción del usuario
+💠 Rombo       = Decisión (bifurcación)
+⚙️ Cilindro    = Proceso backend / Stellar
+➡️ Flecha      = Flujo / Dirección
+```
+
+---
+
+### 📊 Ejemplo Visual de Taskflow
+```
+🟢 INICIO
+  ↓
+📄 Landing Page
+   "Envía dinero a Venezuela en 5 segundos"
+  ↓
+📄 Click en "Conectar Wallet"
+  ↓
+💠 ¿Tiene Freighter instalado?
+  ↓ SÍ              ↓ NO
+📄 Conectar       📄 Instrucciones
+   Freighter         instalar
+  ↓                   ↓
+  └─────────┬─────────┘
+            ↓
+📄 Pantalla principal
+   (Ya conectado, muestra balance)
+  ↓
+📄 Completa formulario
+   - Dirección destino
+   - Monto en USD
+  ↓
+📄 Click en "Enviar"
+  ↓
+📄 Confirma en popup de Freighter
+  ↓
+⚙️ Backend procesa
+   - Construye payment operation
+   - Firma TX
+   - Envía a Stellar network
+  ↓
+⚙️ Stellar confirma (5 seg)
+  ↓
+💠 ¿Transacción exitosa?
+  ↓ SÍ                      ↓ ERROR
+📄 Pantalla éxito          📄 Pantalla error
+   - Confirmación             - Mensaje de error
+   - Detalles TX              - Botón "Reintentar"
+   - Link explorer            ↓
+  ↓                           └──────┐
+📄 Opciones siguientes              ↓
+   - "Enviar otro"           📄 Formulario
+   - "Ver historial"            (volver a intentar)
+  ↓
+🏁 FIN
+```
+
+---
+
+### 🎯 Taskflow Simple vs. Complejo
+
+#### Para el MVP de hackathon, tu Taskflow debe ser LINEAL
+
+#### ❌ NO hagan esto:
+```
+❌ 10 pantallas diferentes
+❌ 5 bifurcaciones complejas
+❌ Flujos secundarios múltiples
+❌ Manejo de 20 casos de error
+❌ Loops complejos
+```
+
+**¿Por qué no?**
+- Imposible de construir en 48 horas
+- Imposible de testear completamente
+- Difícil de demostrar en pitch
+- Alto riesgo de bugs
+
+---
+
+#### ✅ SÍ hagan esto:
+```
+✅ Camino feliz (happy path): el flujo cuando TODO sale bien
+✅ Máximo 5-7 pasos
+✅ 1-2 decisiones clave (ejemplo: ¿tiene wallet?)
+✅ UN caso de error principal (ejemplo: transacción falló)
+```
+
+**¿Por qué funciona?**
+- Construible en tiempo limitado
+- Testeable completamente
+- Demostrable fácilmente
+- Bajo riesgo
+
+---
+
+### 💡 Ejemplo de Simplificación
+
+#### ANTES (complejo):
+```
+🟢 Inicio
+  ↓
+💠 ¿Tiene cuenta? → NO → 📄 Registro
+  ↓ SÍ                      ↓
+  ↓                    📄 Verificar email
+  ↓                         ↓
+  ↓                    📄 Completar perfil
+  ↓                         ↓
+  └─────────┬───────────────┘
+            ↓
+📄 Login
+  ↓
+💠 ¿2FA habilitado? → SÍ → 📄 Ingresar código
+  ↓ NO                         ↓
+  └─────────┬──────────────────┘
+            ↓
+📄 Dashboard
+  ↓
+💠 ¿Primera vez? → SÍ → 📄 Tutorial
+  ↓ NO                      ↓
+  └─────────┬───────────────┘
+            ↓
+[... continúa con 10 pantallas más]
+```
+
+#### DESPUÉS (simple):
+```
+🟢 Inicio
+  ↓
+📄 Landing
+  ↓
+📄 Conectar Wallet (esto es todo el "login")
+  ↓
+💠 ¿Tiene wallet?
+  ↓ SÍ          ↓ NO
+  ↓           📄 Instrucciones
+  └─────┬───────┘
+        ↓
+📄 Pantalla principal
+  ↓
+📄 Acción principal
+  ↓
+⚙️ Stellar procesa
+  ↓
+📄 Confirmación
+  ↓
+🏁 Fin
+```
+
+**Reducción:**
+- De 15+ pantallas → 5 pantallas
+- De 5 decisiones → 1 decisión
+- De múltiples flujos → 1 flujo principal
+
+---
+
+## 🎯 Actividad Práctica: Definir MVP con Taskflow
+
+**Tiempo:** 10 minutos  
+**Herramienta:** Figma / Miro / Papel
+
+### Instrucciones:
+
+1. **Define tu MVP** usando el framework
+2. **Dibuja tu Taskflow** usando los símbolos
+3. **Valida que sea simple** (máximo 5-7 pasos)
+
+### Template:
+```
+MVP CANVAS
+
+🎯 FUNCIONALIDAD CORE:
+"[Verbo] + [qué] + [resultado]"
+_______________________________________
+
+⚙️ INTEGRACIÓN STELLAR:
+□ Smart contract → ___________________
+□ Asset/token → ______________________
+□ Payments → _________________________
+□ DEX → ______________________________
+□ Otro → _____________________________
+
+🔄 FLUJO MÍNIMO:
+
+1. Usuario: _________________________
+   Stellar: _________________________
+
+2. Usuario: _________________________
+   Stellar: _________________________
+
+3. Usuario: _________________________
+   Stellar: _________________________
+
+4. Usuario: _________________________
+   Stellar: _________________________
+
+5. (Opcional) Usuario: ______________
+   Stellar: _________________________
+
+✅ ÉXITO:
+¿Qué ve el usuario? __________________
+¿Qué queda en Stellar? _______________
+¿Evidencia de solución? ______________
+
+
+TASKFLOW (dibuja usando símbolos):
+
+🟢 → 📄 → 💠 → 📄 → ⚙️ → 📄 → 🏁
+
+
+⏱️ ESTIMACIÓN:
+¿Pueden construir esto en [X horas]?
+□ SÍ, es realista
+□ NO, necesitamos simplificar
+```
+
+### 💡 Tip Final:
+
+**Si su MVP tiene más de 5 pasos o creen que no lo terminan en el tiempo de hackathon, SIMPLIFIQUEN.**
+
+**Es mejor 1 cosa perfecta que 5 a medias.**
+
+---
+
+## 📝 Resumen de la Clase
+
+### ✅ Lo que hicimos hoy:
+
+#### 1. **Validamos ideas**
+- Respondimos si el problema necesita blockchain
+- Justificamos por qué Stellar específicamente
+- Aplicamos el test de validación de 4 preguntas
+
+#### 2. **Empatizamos con usuarios**
+- Identificamos los 3 tipos de usuarios en blockchain
+- Creamos una Proto-Persona específica y detallada
+- Profundizamos en problemas, frustraciones y motivaciones
+
+#### 3. **Definimos el POV**
+- Condensamos todo en una frase clara
+- Conectamos usuario + problema + solución + tecnología
+- Validamos que cumple los 5 criterios
+
+#### 4. **Construimos el MVP**
+- Identificamos la funcionalidad CORE (una sola)
+- Definimos integración real con Stellar
+- Establecimos criterios de éxito medibles
+
+#### 5. **Diseñamos el Taskflow**
+- Mapeamos el camino del usuario paso a paso
+- Simplificamos a 5-7 pasos máximo
+- Identificamos decisiones y procesos Stellar
+
+---
+
+### 🎯 Esto es el 70% del trabajo de diseño
+
+Ya tienen **CLARIDAD** sobre qué van a construir.
+
+Esto es más valioso que tener código sin dirección.
+
+---
+
+## 📦 Para la Próxima Clase
+
+### Cada equipo debe entregar (para feedback):
+
+#### 📝 **1. Problema - Objetivo - Solución**
+```
+PROBLEMA:
+¿Qué problema existe hoy?
+_________________________________________
+_________________________________________
+
+OBJETIVO:
+¿Qué queremos que logre el usuario?
+_________________________________________
+_________________________________________
+
+SOLUCIÓN:
+¿Qué tipo de app/función crearemos?
+_________________________________________
+_________________________________________
+```
+
+#### 👤 **2. Proto-Persona**
+
+Completa con:
+- Nombre, edad, ocupación, ubicación
+- Problema específico
+- Tech literacy
+- Frustraciones y motivaciones
+
+#### 🎯 **3. POV (Point of View)**
+
+Una frase que cumpla los 5 criterios:
+```
+[Usuario] necesita [acción] porque [dolor],
+y Stellar permite [beneficio único]
+```
+
+#### 📦 **4. MVP con Taskflow**
+
+- Funcionalidad CORE definida
+- Integración Stellar especificada
+- Flujo de 5 pasos máximo
+- Taskflow dibujado con símbolos
+
+---
+
+## 💡 Reflexión Final
+
+### Recuerden:
+
+**El mejor código no sirve si resuelve el problema equivocado.**
+
+**El mejor diseño no sirve si nadie lo usa.**
+
+**La mejor tecnología no sirve si no genera valor real.**
+
+---
+
+### Lo que importa:
+
+1. ✅ **Claridad** sobre QUÉ problema resuelven
+2. ✅ **Empatía** con QUIÉN lo sufre
+3. ✅ **Foco** en UNA solución core
+4. ✅ **Validación** con usuarios reales
+
+---
